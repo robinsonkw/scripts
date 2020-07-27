@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+
+
+<title>NVD - Results</title>
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta http-equiv="content-style-type" content="text/css" />
+<meta http-equiv="content-script-type" content="text/javascript" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<link rel="stylesheet"
+	href="/site-scripts/font-awesome/css/font-awesome.min.css" />
+<link rel="stylesheet"
+	href="/site-media/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet"
+	href="/site-media/bootstrap/css/bootstrap-theme.min.css" />
+	<link href="/site-scripts/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css"
+	 type="text/css" rel="stylesheet" />
+	
+<link rel="stylesheet" href="/site-media/css/nist-fonts.css" />
+<link rel="stylesheet" href="/site-media/css/nvd-style.css" />
+<link rel="stylesheet" href="/site-media/css/media-resize.css" />
+
+<link rel="apple-touch-icon" sizes="180x180"
+	href="/site-media/images/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png"
+	href="/site-media/images/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png"
+	href="/site-media/images/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="/site-media/images/favicons/manifest.json">
+<link rel="mask-icon"
+	href="/site-media/images/favicons/safari-pinned-tab.svg"
+	color="#000000">
+<link rel="shortcut icon"
+	href="/site-media/images/favicons/favicon.ico">
+<meta name="msapplication-config"
+	content="/site/site-media/images/favicons/browserconfig.xml">
+<meta name="theme-color" content="#000000">
+
+
+<script src="/site-media/js/jquery-modern/jquery.min.js"
+	type="text/javascript"></script>
+<script src="/site-scripts/jquery-visible/jquery.visible.min.js"
+	type="text/javascript"></script>
+<script src="/site-scripts/underscore/underscore-min.js"
+	type="text/javascript"></script>
+<script src="/site-media/bootstrap/js/bootstrap.js"
+	type="text/javascript"></script>
+<script src="/site-scripts/moment/min/moment.min.js"
+	type="text/javascript"></script>
+<script
+	src="/site-scripts/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"
+	type="text/javascript"></script>
+<script src="/site-media/js/megamenu.js" type="text/javascript"></script>
+<script src="/site-media/js/nist-exit-script.js" type="text/javascript"></script>
+<script src="/site-media/js/forms.js" type="text/javascript"></script>
+<script type="text/javascript" id="_fed_an_js_tag"
+	src="/site-media/js/federated-analytics.all.min.js?agency=NIST&amp;subagency=nvd&amp;pua=UA-37115410-41&amp;yt=true"></script>
+
+
+<style id="antiClickjack">
+body {
+	display: none !important;
+}
+</style>
+<script type="text/javascript">
+   if (self === top) {
+       var antiClickjack = document.getElementById("antiClickjack");
+       antiClickjack.parentNode.removeChild(antiClickjack);
+   } else {
+       top.location = self.location;
+   }
+</script>
+
+<link href="/site-media/images/favicons/favicon.ico"
+	type="image/x-icon" rel="shortcut icon" />
+<link href="/site-media/images/favicons/favicon.ico"
+	type="image/x-icon" rel="icon" />
+<meta charset="UTF-8">
+<script src="/site-media/js/vulnerability/nvd-search-results.js"
+	type="text/javascript"></script>
+</head>
+<body id="bodyNvdLayout">
+	<div>
+	<div id="antiClickjack" style="display: none">
+		<h1>You are viewing this page in an unauthorized frame window.</h1>
+		<p>
+			This is a potential security issue, you are being redirected to <a
+				href="https://nvd.nist.gov">https://nvd.nist.gov</a>
+		</p>
+	</div>
+
+	<nav id="navbar" class="navbar">
+		<div id="nist-menu-container" class="container">
+			<div class="row">
+				<!-- Brand -->
+				<div class="col-xs-6 col-md-4 navbar-header">
+					<a class="navbar-brand" href="https://www.nist.gov" target="_blank"
+						id="navbar-brand-image"> <img
+						src="/site-media/images/svg/nist-logo.svg"
+						alt="National Institute of Standards and Technology" width="110"
+						height="30">
+					</a>
+				</div>
+				<div class="col-xs-6 col-md-8 navbar-nist-logo">
+					<span id="nvd-menu-button" class="pull-right"> <a href="#">
+							<span class="fa fa-bars"></span> <span id="nvd-menu-full-text"><span
+								class="hidden-xxs">NVD </span>MENU</span>
+					</a>
+					</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="main-menu-row container">
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div id="main-menu-drop" class="col-lg-12" style="display: none;">
+				<ul>
+
+					<li><a href="/general"> General <span
+							class="expander fa fa-plus" id="main-menu-expander-general"
+							data-expander-name="general" data-expanded="false"> <span
+								class="element-invisible">Expand or Collapse</span>
+						</span>
+					</a>
+						<div style="display: none;" class="sub-menu"
+							data-expander-trigger="general">
+							<div class="row">
+								<div class="col-lg-4">
+									<p>
+										<a href="/general/nvd-dashboard">NVD Dashboard</a>
+									</p>
+									<p>
+										<a href="/general/news">News</a>
+									</p>
+								</div>
+								<div class="col-lg-4">
+									<p>
+										<a href="/general/email-list">Email List</a>
+									</p>
+									<p>
+										<a href="/general/faq">FAQ</a>
+									</p>
+								</div>
+								<div class="col-lg-4">
+									<p>
+										<a href="/general/visualizations">Visualizations</a>
+									</p>
+								</div>
+							</div>
+						</div></li>
+					<li><a href="/vuln"> Vulnerabilities <span
+							class="expander fa fa-plus"
+							id="main-menu-expander-vulnerabilities"
+							data-expander-name="vulnerabilities" data-expanded="false">
+								<span class="element-invisible">Expand or Collapse</span>
+						</span>
+					</a>
+						<div style="display: none;" class="sub-menu"
+							data-expander-trigger="vulnerabilities">
+							<div class="row">
+								<div class="col-lg-4">
+									<p>
+										<a href="/vuln/search">Search & Statistics</a>
+									</p>
+									<p>
+										<a href="/vuln/full-listing">Full Listing</a>
+									</p>
+
+								</div>
+								<div class="col-lg-4">
+									<p>
+										<a href="/vuln/categories">Categories</a>
+									</p>
+									<p>
+										<a href="/vuln/data-feeds">Data Feeds</a>
+									</p>
+
+
+								</div>
+								<div class="col-lg-4">
+									<p>
+										<a href="/vuln/vendor-comments">Vendor Comments</a>
+									</p>
+									<p>
+										<a href="/vuln/cvmap">CVMAP</a>
+									</p>
+								</div>
+							</div>
+						</div></li>
+					<li><a href="/vuln-metrics/cvss#"> Vulnerability Metrics <span
+							class="expander fa fa-plus" id="main-menu-expander-metrics"
+							data-expander-name="metrics" data-expanded="false"> <span
+								class="element-invisible">Expand or Collapse</span>
+						</span>
+					</a>
+						<div style="display: none;" class="sub-menu"
+							data-expander-trigger="metrics">
+							<div class="row">
+								<div class="col-lg-4">
+									<p>
+										<a href="/vuln-metrics/cvss/v3-calculator">CVSS V3
+											Calculator</a>
+									</p>
+								</div>
+								<div class="col-lg-4">
+									<p>
+										<a href="/vuln-metrics/cvss/v2-calculator">CVSS V2
+											Calculator</a>
+									</p>
+
+								</div>
+								<div class="col-lg-4"></div>
+							</div>
+						</div></li>
+					<li><a href="/products"> Products <span
+							class="expander fa fa-plus" id="main-menu-expander-products"
+							data-expander-name="products" data-expanded="false"> <span
+								class="element-invisible">Expand or Collapse</span>
+						</span>
+					</a>
+						<div style="display: none;" class="sub-menu"
+							data-expander-trigger="products">
+							<div class="row">
+								<div class="col-lg-4">
+									<p>
+										<a href="/products/cpe">CPE Dictionary</a>
+									</p>
+									<p>
+										<a href="/products/cpe/search">CPE Search</a>
+									</p>
+
+								</div>
+								<div class="col-lg-4">
+									<p>
+										<a href="/products/cpe/statistics">CPE Statistics</a>
+									</p>
+									<p>
+										<a href="/products/swid">SWID</a>
+									</p>
+
+								</div>
+								<div class="col-lg-4"></div>
+							</div>
+						</div></li>
+					<li><a href="/config/cce">Configurations (CCE)</a></li>
+					<li><a href="/info"> Contact NVD </a></li>
+					<li><a href="/other"> Other Sites <span
+							class="expander fa fa-plus" id="main-menu-expander-othersites"
+							data-expander-name="otherSites" data-expanded="false"> <span
+								class="element-invisible">Expand or Collapse</span>
+						</span>
+					</a>
+						<div style="display: none;" class="sub-menu"
+							data-expander-trigger="otherSites">
+							<div class="row">
+								<div class="col-lg-4">
+									<p>
+										<a href="/ncp/repository">Checklist (NCP) Repository</a>
+									</p>
+									<p>
+										<a href="/800-53">800-53 Controls</a>
+									</p>
+								</div>
+								<div class="col-lg-4">
+									<p>
+										<a
+											href="https://csrc.nist.gov/projects/scap-validation-program">SCAP
+											Validated Tools</a>
+									</p>
+									<p>
+										<a
+											href="https://csrc.nist.gov/projects/security-content-automation-protocol">SCAP</a>
+									</p>
+								</div>
+								<div class="col-lg-4">
+									<p>
+										<a
+											href="https://csrc.nist.gov/projects/united-states-government-configuration-baseline">USGCB</a>
+									</p>
+								</div>
+							</div>
+						</div></li>
+
+					<li><a href="/search"> Search <span
+							class="expander fa fa-plus" id="main-menu-expander-search"
+							data-expander-name="search" data-expanded="false"> <span
+								class="element-invisible">Expand or Collapse</span>
+						</span>
+					</a>
+						<div style="display: none;" class="sub-menu"
+							data-expander-trigger="search">
+							<div class="row">
+								<div class="col-lg-4">
+									<p>
+										<a href="/vuln/search">Vulnerability Search</a>
+									</p>
+								</div>
+								<div class="col-lg-4">
+									<p>
+										<a href="/products/cpe/search">CPE Search</a>
+									</p>
+								</div>
+							</div>
+						</div></li>
+
+
+
+
+				</ul>
+			</div>
+			<!-- /#mobile-nav-container -->
+		</div>
+
+	</nav>
+	<section id="itl-header" class="has-menu">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 col-md-8">
+					<h2 class="hidden-xs hidden-sm">
+						<a href="https://www.nist.gov/itl" target="_blank">Information
+							Technology Laboratory</a>
+					</h2>
+			 <h1 class="hidden-xs hidden-sm">
+						<a id="nvd-header-link"
+						  href="/">National Vulnerability Database</a>
+					</h1>
+					<h1 class="hidden-xs text-center hidden-md hidden-lg">National Vulnerability Database</h1>
+					<h1 class="hidden-sm hidden-md hidden-lg text-center">NVD</h1>
+				
+				</div>
+				<div class="col-sm-12 col-md-4">
+					<a style="width: 100%; text-align: center; display: block;"><img
+						alt="NVD Logo" class="nvd-header-logo"
+						src="/site-media/images/NVD-white-55.png" /></a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+		
+</div>
+	<div id="body-section" class="container">
+		<div>
+			<ol class="breadcrumb">
+			<li>
+				<a href="/vuln" class="CMSBreadCrumbsLink">Vulnerabilities</a><a href="/vuln/search" class="CMSBreadCrumbsLink">Search And Statistics</a>
+				
+			</li>
+			</ol>
+		</div>
+		<div>
+
+		
+
+
+		<div id="vulnerability-search-results-div">
+
+			<!-- Heading of Page -->
+			<input id="sortByUrl" type="hidden"
+				value="/site/vuln/search/results?results_type=overview&amp;query=phyml&amp;search_type=all&amp;form_type=Basic"></input> <span
+				class="pull-right form-inline"> <label for="SortByDDL">Sort
+					results by: </label> <select id="SortByDDL" class="form-control" name="sortBy">
+
+					<option value="publishDate|desc"
+						selected="selected">Publish Date Descending</option>
+
+					<option value="publishDate|asc">Publish Date Ascending</option>
+
+					<option value="modifiedDate|desc">Modified Date Descending</option>
+
+					<option value="modifiedDate|asc">Modified Date Ascending</option>
+			</select>
+				<button id="sortChangeBtn" class="btn btn-success">Sort</button>
+			</span>
+
+			<h2>
+				<i class="fa fa-search"></i> Search Results <small><a
+					href="/vuln/search?results_type=overview&amp;query=phyml&amp;search_type=all&amp;form_type=Basic"
+					id="refine-search-anchor" data-testid="vuln-refine-link"><span
+						class="refineSearch">(Refine Search)</span></a></small>
+			</h2>
+
+
+
+
+			<!-- Top row with search params and pagination -->
+			<div class="row">
+				<div class="col-sm-12 col-lg-4">
+
+					<div id="search-params-panel">
+
+						<strong class="h4Size">Search Parameters:</strong>
+
+						<ul>
+
+							<li data-testid="vuln-params-results_type"><span
+								class="searchParamLabel"
+								data-testid="vuln-params-results_type-label">Results Type: </span> <span
+								data-testid="vuln-params-results_type-value">Overview</span> 
+								</li>
+
+							<li data-testid="vuln-params-query"><span
+								class="searchParamLabel"
+								data-testid="vuln-params-query-label">Keyword (text search): </span> <span
+								data-testid="vuln-params-query-value">phyml</span> 
+								</li>
+
+							<li data-testid="vuln-params-search_type"><span
+								class="searchParamLabel"
+								data-testid="vuln-params-search_type-label">Search Type: </span> <span
+								data-testid="vuln-params-search_type-value">Search All</span> 
+								</li>
+
+							
+						</ul>
+
+					</div>
+				</div>
+
+				<div class="col-sm-12 col-lg-3">
+
+					There are <strong data-testid="vuln-matching-records-count">0</strong> matching records.
+
+					<div id="results-numbers-panel">
+
+						Displaying matches <strong
+							data-testid="vuln-displaying-count-from">1</strong> through <strong
+							data-testid="vuln-displaying-count-through">0</strong>.
+
+					</div>
+				</div>
+				<div class="col-sm-12 col-lg-5">
+					<div><div>
+		
+	</div></div>
+
+				</div>
+			</div>
+
+			<!-- Results Panel -->
+			<div id="row">
+
+				<table class="table table-striped table-hover"
+					data-testid="vuln-results-table">
+					<thead>
+						<tr>
+							<th nowrap="nowrap">Vuln ID <i
+								class="fa fa-bug fa-flip-vertical"></i></th>
+							<th>Summary <i class="fa fa-info-circle"></i></th>
+							<th nowrap="nowrap">CVSS Severity <i
+								class="fa fa-balance-scale"></i></th>
+						</tr>
+					</thead>
+					<tbody>
+
+						
+
+
+
+					</tbody>
+				</table>
+
+
+
+				<div><div>
+		
+	</div></div>
+			</div>
+
+		</div>
+
+	</div>
+	</div>
+	<footer id="footer" >
+		<div class="container">
+
+			<div class="row">
+				<div class="col-sm-12">
+					<ul class="social-list pull-right">
+						<li class="field-item service-twitter list-horiz"><a
+							href="https://twitter.com/NISTCyber" target="_blank"
+							class="social-btn social-btn--large extlink ext"> <i
+								class="fa fa-twitter fa-fw"><span class="element-invisible">twitter</span></i><span
+								class="ext"><span class="element-invisible"> (link
+										is external)</span></span>
+						</a></li>
+						<li class="field-item service-facebook list-horiz"><a
+							href="https://www.facebook.com/NIST" target="_blank"
+							class="social-btn social-btn--large extlink ext"> <i
+								class="fa fa-facebook fa-fw"><span class="element-invisible">facebook</span></i><span
+								class="ext"><span class="element-invisible"> (link
+										is external)</span></span></a></li>
+						<li class="field-item service-linkedin list-horiz"><a
+							href="https://www.linkedin.com/company/nist" target="_blank"
+							class="social-btn social-btn--large extlink ext"> <i
+								class="fa fa-linkedin fa-fw"><span class="element-invisible">linkedin</span></i><span
+								class="ext"><span class="element-invisible"> (link
+										is external)</span></span></a></li>
+						<li class="field-item service-youtube list-horiz"><a
+							href="https://www.youtube.com/user/USNISTGOV" target="_blank"
+							class="social-btn social-btn--large extlink ext"> <i
+								class="fa fa-youtube fa-fw"><span class="element-invisible">youtube</span></i><span
+								class="ext"><span class="element-invisible"> (link
+										is external)</span></span></a></li>
+						<li class="field-item service-rss list-horiz"><a
+							href="https://www.nist.gov/news-events/nist-rss-feeds"
+							target="_blank" class="social-btn social-btn--large extlink">
+								<i class="fa fa-rss fa-fw"><span class="element-invisible">rss</span></i>
+						</a></li>
+						<li class="field-item service-govdelivery list-horiz last"><a
+							href="https://public.govdelivery.com/accounts/USNIST/subscriber/new?qsp=USNIST_3"
+							target="_blank" class="social-btn social-btn--large extlink ext">
+								<i class="fa fa-envelope fa-fw"><span
+									class="element-invisible">govdelivery</span></i><span class="ext"><span
+									class="element-invisible"> (link is external)</span></span>
+						</a></li>
+					</ul>
+					<span class="hidden-xs"> <a
+						title="National Institute of Standards and Technology" rel="home"
+						class="footer-nist-logo"> <img
+							src="/site-media/images/logo_rev.png"
+							alt="National Institute of Standards and Technology logo" />
+					</a>
+					</span>
+				</div>
+			</div>
+			<div class="row hidden-sm hidden-md hidden-lg">
+				<div class="col-sm-12">
+					<a href="https://www.nist.gov"
+						title="National Institute of Standards and Technology" rel="home"
+						target="_blank" class="footer-nist-logo"> <img
+						src="/site-media/images/logo_rev.png"
+						alt="National Institute of Standards and Technology logo" />
+					</a>
+				</div>
+			</div>
+
+			<div class="row footer-contact-container">
+				<div class="col-sm-12">
+					<strong>HEADQUARTERS</strong><br> 100 Bureau Drive<br>
+					Gaithersburg, MD 20899
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-sm-12">
+					<p>
+						<a href="mailto:nvd@nist.gov">Webmaster</a> | <a
+							href="https://www.nist.gov/about-nist/contact-us">Contact Us</a>
+						| <a href="https://www.nist.gov/about-nist/our-organization"
+							style="display: inline-block;">Our Other Offices</a>
+					</p>
+				</div>
+			</div>
+
+			<div id="footer-nav-menu" class="row" role="navigation">
+				<div class="col-md-8 col-sm-6 col-xs-12 col-xxs-12">
+					<div class="row">
+						<div class="col-md-4">
+							<p>
+								<a href="/general">GENERAL</a>
+							</p>
+							<p>
+								<a href="/general/nvd-dashboard">NVD Dashboard</a><br /> <a
+									href="/general/news">News</a><br /> <a
+									href="/general/email-list">Email List</a><br /> <a
+									href="/general/faq">FAQ</a><br /> <a
+									href="/general/visualizations">Visualizations</a>
+							</p>
+							<p>
+								<a href="/vuln">VULNERABILITIES</a>
+							</p>
+							<p>
+								<a href="/vuln/search">Search & Statistics</a><br /> <a
+									href="/vuln/full-listing">Full Listing</a><br /> <a
+									href="/vuln/categories">Categories</a><br /> <a
+									href="/vuln/data-feeds">Data Feeds</a><br /> <a
+									href="/vuln/vendor-comments">Vendor Comments</a><br /><a
+									href="/vuln/cvmap">CVMAP</a><br />
+							</p>
+						</div>
+						<div class="col-md-4">
+							<p>
+								<a href="/vuln-metrics/cvss">VULNERABILITY METRICS</a>
+							</p>
+							<p>
+								<a href="/vuln-metrics/cvss/v3-calculator">CVSS V3
+									Calculator</a><br /> <a href="/vuln-metrics/cvss/v2-calculator">CVSS
+									V2 Calculator</a><br />
+							</p>
+							<p>
+								<a href="/products">PRODUCTS</a>
+							</p>
+							<p>
+								<a href="/products/cpe">CPE Dictionary</a><br /> <a
+									href="/products/cpe/search">CPE Search</a><br /> <a
+									href="/products/cpe/statistics">CPE Statistics</a><br /> <a
+									href="/products/swid">SWID</a><br />
+							</p>
+							<p>
+								<a href="/config/cce">CONFIGURATIONS (CCE)</a>
+							</p>
+						</div>
+						<div class="col-md-4">
+							<p>
+								<a href="/info">CONTACT NVD</a>
+							</p>
+							<p>
+								<a href="/other">OTHER SITES</a>
+							</p>
+							<p>
+								<a href="/ncp/repository">Checklist (NCP) Repository</a><br />
+								<a href="/800-53">800-53 Controls</a><br /> <a
+									href="https://csrc.nist.gov/projects/scap-validation-program">SCAP
+									Validated Tools</a><br /> <a
+									href="https://csrc.nist.gov/projects/security-content-automation-protocol">SCAP</a><br />
+								<a href="https://csrc.nist.gov/projects/united-states-government-configuration-baseline">USGCB</a>
+							</p>
+							<p>
+								<a href="/search">SEARCH</a>
+							</p>
+							<p>
+								<a href="/vuln/search">Vulnerability Search</a><br /> <a
+									href="/products/cpe/search">CPE Search</a>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6 col-xs-12 col-xxs-12">
+					<span class="pull-right text-right"> <strong>Information
+							Technology Laboratory<span class="hidden-xs"> (ITL)</span>
+					</strong><br /> <strong>National Vulnerability Database<span
+							class="hidden-xs"> (NVD)</span></strong><br /> <br /> <a
+						href="/general/email-list" target="_blank">Announcement and
+							Discussion Lists</a><br /> <strong>General Questions &
+							Webmaster Contact</strong> <br /> Email:<a href="mailto:nvd@nist.gov"
+						style="display: inline-block;">nvd@nist.gov</a><br /> <br /> <strong>Incident
+							Response Assistance and Non-NVD Related Technical Cyber Security
+							Questions:</strong>
+						<p>
+							US-CERT Security Operations Center<br /> Email: <a
+								href="mailto:soc@us-cert.gov">soc@us-cert.gov</a><br /> Phone:
+							1-888-282-0870
+						</p>
+						<p>
+							<span
+								style="display: inline-block; text-align: left; margin-left: 0; margin-right: 0;">
+								<strong style="float: right">Sponsored by</strong><br /> <a
+								href="https://www.dhs.gov" target="_blank">DHS/NCCIC/US-CERT</a>
+							</span> <a style="float: right; width: 68px;"> <img
+								src="/site-media/images/dhs-logo.png" alt="Department of Homeland Security" />
+							</a></span>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-lg-12 footer-bottom-links-container">
+					<p>
+						<a target="_blank" href="https://www.nist.gov/privacy-policy">Privacy
+							Statement</a> | <a target="_blank"
+							href="https://www.nist.gov/privacy-policy#privpolicy">Privacy
+							Policy</a> | <a target="_blank"
+							href="https://www.nist.gov/privacy-policy#secnot">Security
+							Notice</a> | <a target="_blank"
+							href="https://www.nist.gov/privacy-policy#accesstate">Accessibility
+							Statement</a> | <a target="_blank"
+							href="https://www.nist.gov/privacy">NIST Privacy Program</a> | <a
+							target="_blank" href="https://www.nist.gov/no-fear-act-policy">No
+							Fear Act Policy</a>
+					</p>
+					<p>
+						<a target="_blank" href="https://www.nist.gov/disclaimer">Disclaimer</a>
+						| <a target="_blank" href=" https://www.nist.gov/foia">FOIA</a> |
+						<a target="_blank"
+							href="https://www.nist.gov/environmental-policy-statement">Environmental
+							Policy Statement</a> | <a target="_blank"
+							href="https://www.nist.gov/privacy-policy#cookie">Cookie
+							Disclaimer</a> | <a target="_blank"
+							href="https://www.nist.gov/summary-report-scientific-integrity">Scientific
+							Integrity Summary</a> | <a target="_blank"
+							href="https://www.nist.gov/nist-information-quality-standards">NIST
+							Information Quality Standards</a>
+					</p>
+					<p>
+						<a target="_blank" href="https://www.usa.gov/business?source=busa">Business
+							USA</a> | <a target="_blank" href="https://www.healthcare.gov/">Healthcare.gov</a>
+						| <a target="_blank" href="https://www.science.gov/">Science.gov</a>
+						| <a target="_blank" href="https://www.usa.gov/">USA.gov</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+</body>
+</html>

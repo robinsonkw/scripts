@@ -1,0 +1,62 @@
+								</li>
+
+							
+						</ul>
+
+					</div>
+				</div>
+
+				<div class="col-sm-12 col-lg-3">
+
+					There are <strong data-testid="vuln-matching-records-count">0</strong> matching records.
+
+					<div id="results-numbers-panel">
+
+						Displaying matches <strong
+							data-testid="vuln-displaying-count-from">1</strong> through <strong
+							data-testid="vuln-displaying-count-through">0</strong>.
+
+					</div>
+				</div>
+				<div class="col-sm-12 col-lg-5">
+					<div><div>
+		
+	</div></div>
+
+				</div>
+			</div>
+
+			<!-- Results Panel -->
+			<div id="row">
+
+				<table class="table table-striped table-hover"
+					data-testid="vuln-results-table">
+					<thead>
+						<tr>
+							<th nowrap="nowrap">Vuln ID <i
+								class="fa fa-bug fa-flip-vertical"></i></th>
+							<th>Summary <i class="fa fa-info-circle"></i></th>
+							<th nowrap="nowrap">CVSS Severity <i
+								class="fa fa-balance-scale"></i></th>
+						</tr>
+					</thead>
+					<tbody>
+
+						
+
+
+
+					</tbody>
+				</table>
+
+
+
+				<div><div>
+		
+	</div></div>
+			</div>
+
+		</div>
+
+	</div>
+	</div>

@@ -1,0 +1,42 @@
+
+<div class="smaller" style="background-color:#e0dbd2; padding:3px; border:1px solid #706c60; margin-bottom:10px">
+There are <b>1</b> CVE entries that match your search.
+</div>
+
+<div id="TableWithRules">
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<thead>
+	<tr>
+		<th valign="top" style="padding:3px">Name</th>
+		<th valign="top" style="padding:3px">Description</th>
+	</tr>
+</thead>
+	<tr>
+		<td valign="top" nowrap="nowrap"><a href="/cgi-bin/cvename.cgi?name=CVE-2017-1000206">CVE-2017-1000206</a></td>
+		<td valign="top">samtools htslib library version 1.4.0 and earlier is vulnerable to buffer overflow in the CRAM rANS codec resulting in potential arbitrary code execution
+
+</td>
+	</tr>
+
+</table>
+</div>
+
+<div class="backtop noprint"><a href="#top">Back to top</a></div>
+<!--round box-->
+<div id="LtGreen" style="width:75%;min-width:500px;margin:auto;white-space:nowrap">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" id="Box">
+  <tr>
+    <td class="corner" valign="top" align="left" nowrap="nowrap"><img src="/images/layout/corner_ul.gif" alt="" class="noprint"/></td>
+    <td width="100%"></td>
+    <td class="corner" valign="top" align="right" nowrap="nowrap"><img src="/images/layout/corner_ur.gif" alt="" class="noprint"/></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td valign="top">
+
+<div class="smaller" style="text-align:center;white-space:nowrap">
+	<form style="padding:0px; margin:0px;" method="get" action="/cgi-bin/cvekey.cgi">
+		<label for="keyword"><span class="redbold" style="text-transform:uppercase">Search CVE Using Keywords:</span></label>&nbsp;&nbsp;<input name="keyword" id="keyword" maxlength="100" tabindex="0" type="textarea"></input>
+		<input type="submit" value="Submit"/>
+	</form>
+		<div>You can also search by reference using the <a style="text-decoration:underline" href="/data/refs/index.html">CVE Reference Maps</a>.</div>

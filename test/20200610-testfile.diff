@@ -1,0 +1,4 @@
+1c1
+< echo "this is a test file for yesterday!"
+---
+> echo "this is a test file for today."

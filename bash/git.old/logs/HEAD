@@ -1,0 +1,7 @@
+0000000000000000000000000000000000000000 5f6f9e983ce693d8517c675e46a6865dc16bf051 343538 <KevinRobinson@pn1803538.lanl.gov> 1585763910 -0600	commit (initial): Bash script files initial commit
+5f6f9e983ce693d8517c675e46a6865dc16bf051 97a816cc4c4222e89c62dee872531de17fd0693c Kevin Robinson <robinsonkw@gmail.com> 1585764001 -0600	commit (amend): Bash script files initial commit
+97a816cc4c4222e89c62dee872531de17fd0693c 8f70aeee9927a34d4fce550671b3a25643faab2c Kevin Robinson <robinsonkw@gmail.com> 1585772133 -0600	commit (merge): LANL Git
+8f70aeee9927a34d4fce550671b3a25643faab2c 2f6dfa737e3003de880e3d209105a2403fced6be Kevin Robinson <robinsonkw@gmail.com> 1585773532 -0600	commit: Audit script for testing purposes.
+2f6dfa737e3003de880e3d209105a2403fced6be d184a6c0fdb726546f174670969e2480a287a051 Kevin Robinson <robinsonkw@gmail.com> 1585773878 -0600	commit: Added folder for script test results
+d184a6c0fdb726546f174670969e2480a287a051 083e13b8a2063ee05506af8c7fe4f5f2af1e10a9 Kevin Robinson <robinsonkw@gmail.com> 1585773934 -0600	commit: Took out extraneous stuff in README
+083e13b8a2063ee05506af8c7fe4f5f2af1e10a9 c5e979bb214ffb6ed7240bf8e2863cd0793a0312 Kevin Robinson <robinsonkw@gmail.com> 1586785329 -0600	commit: Added file descriptions for each of the current script files.

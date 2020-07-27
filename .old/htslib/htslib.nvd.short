@@ -1,0 +1,180 @@
+								</li>
+
+							
+						</ul>
+
+					</div>
+				</div>
+
+				<div class="col-sm-12 col-lg-3">
+
+					There are <strong data-testid="vuln-matching-records-count">5</strong> matching records.
+
+					<div id="results-numbers-panel">
+
+						Displaying matches <strong
+							data-testid="vuln-displaying-count-from">1</strong> through <strong
+							data-testid="vuln-displaying-count-through">5</strong>.
+
+					</div>
+				</div>
+				<div class="col-sm-12 col-lg-5">
+					<div><div>
+		
+	</div></div>
+
+				</div>
+			</div>
+
+			<!-- Results Panel -->
+			<div id="row">
+
+				<table class="table table-striped table-hover"
+					data-testid="vuln-results-table">
+					<thead>
+						<tr>
+							<th nowrap="nowrap">Vuln ID <i
+								class="fa fa-bug fa-flip-vertical"></i></th>
+							<th>Summary <i class="fa fa-info-circle"></i></th>
+							<th nowrap="nowrap">CVSS Severity <i
+								class="fa fa-balance-scale"></i></th>
+						</tr>
+					</thead>
+					<tbody>
+
+						<tr data-testid="vuln-row-0">
+							<th nowrap="nowrap"><strong><a
+									href="/vuln/detail/CVE-2018-14329"
+									data-testid="vuln-detail-link-0">CVE-2018-14329</a></strong><br></th>
+							<td>
+								<p data-testid="vuln-summary-0">In HTSlib 1.8, a race condition in cram/cram_io.c might allow local users to overwrite arbitrary files via a symlink attack.</p> <strong>Published:</strong>
+								<span
+								data-testid="vuln-published-on-0">July 16, 2018; 10:29:00 PM -0400</span>
+							</td>
+							<td nowrap="nowrap">
+							
+
+									<span id="cvss3-link">
+										<em>V3.1:</em> <a
+										href="/vuln-metrics/cvss/v3-calculator?name=CVE-2018-14329&amp;vector=AV:L/AC:H/PR:L/UI:N/S:U/C:N/I:H/A:N&amp;version=3.1&amp;source=NIST"
+										class="label label-warning" data-testid="vuln-cvss3-link-0">4.7 MEDIUM</a><br/>
+								</span>  <span id="cvss2-link"> <em>    V2.0:</em> <a
+										href="/vuln-metrics/cvss/v2-calculator?name=CVE-2018-14329&amp;vector=(AV:L/AC:M/Au:N/C:N/I:P/A:P)&amp;version=2.0&amp;source=NIST"
+										class="label label-low" data-testid="vuln-cvss2-link-0">3.3 LOW</a><br/>
+								</span>
+
+							 </td>
+						</tr>
+
+						<tr data-testid="vuln-row-1">
+							<th nowrap="nowrap"><strong><a
+									href="/vuln/detail/CVE-2018-13845"
+									data-testid="vuln-detail-link-1">CVE-2018-13845</a></strong><br></th>
+							<td>
+								<p data-testid="vuln-summary-1">An issue has been found in HTSlib 1.8. It is a buffer over-read in sam_parse1 in sam.c.</p> <strong>Published:</strong>
+								<span
+								data-testid="vuln-published-on-1">July 10, 2018; 2:29:00 PM -0400</span>
+							</td>
+							<td nowrap="nowrap">
+							
+
+									<span id="cvss3-link">
+										<em>V3.0:</em> <a
+										href="/vuln-metrics/cvss/v3-calculator?name=CVE-2018-13845&amp;vector=AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H&amp;version=3.0&amp;source=NIST"
+										class="label label-critical" data-testid="vuln-cvss3-link-1">9.8 CRITICAL</a><br/>
+								</span>  <span id="cvss2-link"> <em>    V2.0:</em> <a
+										href="/vuln-metrics/cvss/v2-calculator?name=CVE-2018-13845&amp;vector=(AV:N/AC:L/Au:N/C:P/I:P/A:P)&amp;version=2.0&amp;source=NIST"
+										class="label label-danger" data-testid="vuln-cvss2-link-1">7.5 HIGH</a><br/>
+								</span>
+
+							 </td>
+						</tr>
+
+						<tr data-testid="vuln-row-2">
+							<th nowrap="nowrap"><strong><a
+									href="/vuln/detail/CVE-2018-13844"
+									data-testid="vuln-detail-link-2">CVE-2018-13844</a></strong><br></th>
+							<td>
+								<p data-testid="vuln-summary-2">An issue has been found in HTSlib 1.8. It is a memory leak in fai_read in faidx.c.</p> <strong>Published:</strong>
+								<span
+								data-testid="vuln-published-on-2">July 10, 2018; 2:29:00 PM -0400</span>
+							</td>
+							<td nowrap="nowrap">
+							
+
+									<span id="cvss3-link">
+										<em>V3.0:</em> <a
+										href="/vuln-metrics/cvss/v3-calculator?name=CVE-2018-13844&amp;vector=AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H&amp;version=3.0&amp;source=NIST"
+										class="label label-danger" data-testid="vuln-cvss3-link-2">7.5 HIGH</a><br/>
+								</span>  <span id="cvss2-link"> <em>    V2.0:</em> <a
+										href="/vuln-metrics/cvss/v2-calculator?name=CVE-2018-13844&amp;vector=(AV:N/AC:L/Au:N/C:N/I:N/A:P)&amp;version=2.0&amp;source=NIST"
+										class="label label-warning" data-testid="vuln-cvss2-link-2">5.0 MEDIUM</a><br/>
+								</span>
+
+							 </td>
+						</tr>
+
+						<tr data-testid="vuln-row-3">
+							<th nowrap="nowrap"><strong><a
+									href="/vuln/detail/CVE-2018-13843"
+									data-testid="vuln-detail-link-3">CVE-2018-13843</a></strong><br></th>
+							<td>
+								<p data-testid="vuln-summary-3">** DISPUTED ** An issue has been found in HTSlib 1.8. It is a memory leak in bgzf_getline in bgzf.c. NOTE: the software maintainer&#39;s position is that the &quot;failure to free memory&quot; can be fixed in applications that use the HTSlib library (such as test/test_bgzf.c in the original report) and is not a library issue.</p> <strong>Published:</strong>
+								<span
+								data-testid="vuln-published-on-3">July 10, 2018; 2:29:00 PM -0400</span>
+							</td>
+							<td nowrap="nowrap">
+							
+
+									<span id="cvss3-link">
+										<em>V3.0:</em> <a
+										href="/vuln-metrics/cvss/v3-calculator?name=CVE-2018-13843&amp;vector=AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H&amp;version=3.0&amp;source=NIST"
+										class="label label-danger" data-testid="vuln-cvss3-link-3">7.5 HIGH</a><br/>
+								</span>  <span id="cvss2-link"> <em>    V2.0:</em> <a
+										href="/vuln-metrics/cvss/v2-calculator?name=CVE-2018-13843&amp;vector=(AV:N/AC:L/Au:N/C:N/I:N/A:P)&amp;version=2.0&amp;source=NIST"
+										class="label label-warning" data-testid="vuln-cvss2-link-3">5.0 MEDIUM</a><br/>
+								</span>
+
+							 </td>
+						</tr>
+
+						<tr data-testid="vuln-row-4">
+							<th nowrap="nowrap"><strong><a
+									href="/vuln/detail/CVE-2017-1000206"
+									data-testid="vuln-detail-link-4">CVE-2017-1000206</a></strong><br></th>
+							<td>
+								<p data-testid="vuln-summary-4">samtools htslib library version 1.4.0 and earlier is vulnerable to buffer overflow in the CRAM rANS codec resulting in potential arbitrary code execution</p> <strong>Published:</strong>
+								<span
+								data-testid="vuln-published-on-4">November 17, 2017; 10:29:00 AM -0500</span>
+							</td>
+							<td nowrap="nowrap">
+							
+
+									<span id="cvss3-link">
+										<em>V3.0:</em> <a
+										href="/vuln-metrics/cvss/v3-calculator?name=CVE-2017-1000206&amp;vector=AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H&amp;version=3.0&amp;source=NIST"
+										class="label label-critical" data-testid="vuln-cvss3-link-4">9.8 CRITICAL</a><br/>
+								</span>  <span id="cvss2-link"> <em>    V2.0:</em> <a
+										href="/vuln-metrics/cvss/v2-calculator?name=CVE-2017-1000206&amp;vector=(AV:N/AC:L/Au:N/C:P/I:P/A:P)&amp;version=2.0&amp;source=NIST"
+										class="label label-danger" data-testid="vuln-cvss2-link-4">7.5 HIGH</a><br/>
+								</span>
+
+							 </td>
+						</tr>
+
+
+
+					</tbody>
+				</table>
+
+
+
+				<div><div>
+		
+	</div></div>
+			</div>
+
+		</div>
+
+	</div>
+	</div>
