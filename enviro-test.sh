@@ -6,11 +6,11 @@ UBUNTU=$(env | grep 'Ubuntu')
 echo $MACOS
 echo $UBUNTU
 
-if [ ! $MACOS=="" ];
+if test -z "$MACOS"
 then
-    echo "$MACOS means this is a Mac"
+    echo "empty"
 else
-    echo "The Mac OS environment variable is null."
+    echo "$MACOS means this is a Mac"
 fi
 
 exit
