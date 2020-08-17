@@ -14,7 +14,7 @@ PATCH='3'
 printf "Enter file path to place file: "
 read PATH
 printf "This will download openEMR version $VERSION
-with patch $PATCH. Ok? [yes/No]"
+with patch $PATCH. Ok? [yes/No]  "
 read confirm
 
 DOWNLOAD=${WEB_PATH}${VERSION}'-Patch-'$PATCH'.zip'
