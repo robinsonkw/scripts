@@ -17,8 +17,14 @@ printf "This will download openEMR version $VERSION
 with patch $PATCH. Ok? [yes/No]"
 read confirm
 
+DOWNLOAD=${WEB_PATH}${VERSION}'-Patch-'$PATCH'.zip'
+LOCATION=${PATH}/${VERSION}'-Patch-'$PATCH'.zip'
+
+echo $DOWNLOAD
+echo $LOCTION
+exit
 case $confirm in
-    y*|Y*|"") wget -O $PATH/$VERSION'-Patch-'$PATCH'.zip' ${WEB_PATH}${VERSION}'-Patch-'$PATCH'.zip' ;;
+    y*|Y*|"") curl $DOWNLOAD > $LOCATION ;;
     n*|N*) echo "Patch download skipped."; return ;;
     *) echo "Invalid choice. Patch download skipped."; return ;;
 esac
