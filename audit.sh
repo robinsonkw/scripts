@@ -56,4 +56,6 @@ aureport $TS $TE -x
 
 cp /var/log/audit/auditscript.log /var/log/audit/auditscript.log.last
 mv /var/log/audit/auditscript.log /var/log/audit/audit-$today
-add fine 'useradd'
+
+# ### TO DO ###
+# add find 'useradd'
