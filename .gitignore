@@ -1,1 +1,6 @@
-.DS_*
+# Files
+.DS_Store
+.DS_store
+
+# Folders
+.old/
