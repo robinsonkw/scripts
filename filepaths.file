@@ -1,0 +1,18 @@
+Netapp information
+ 
+/users/isso/NetApp
+Netapp.disks.serial.log.date
+ 
+/users/isso/DriveInventory
+Drive_inventory_DATE_TIME
+ 
+/user/usso/idmgr
+Idmgr.disks
+ 
+/archive/isso/logs/Mar2020_CremRep
+Disk.inventory.now
+Tape.inventory.now
+ 
+Secure logs for “session opened” and “session closed”
+Secure and message logs for “access denied” invalid failed falure warning
+Message logs for log space and usb
