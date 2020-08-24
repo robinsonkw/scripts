@@ -7,15 +7,10 @@ really should not be an issue.)  But current script is currently using
     ```
     olddate=$(/bin/ls -lr | tail -2 | head -1 | grep -e '[[:digit:]]{8}' | awk '{ print $9 }')
     ```
-
 to get the last folder created (which should have been last week for audting).  I would like
 to get this transfered into the file name, since this would be running every day, we could find
-the last modified file and use 
-    ```
-    sed
-    ```
-
-to get the first eight (8) digits which is the date based on my audit script format.
+the last modified file and use "sed" to get the first eight (8) digits which is the date 
+based on my audit script format.
 1. Compare the $olddate to the $yesterday date.  If they match, then the script can proceed, 
 else it should log an derror.  Error logging, actual, is way outside my coding experience.
 1. Check to see if the DriveInventory report exists.  Set drive inventory flag to Yes.
