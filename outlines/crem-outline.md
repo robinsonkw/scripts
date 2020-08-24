@@ -3,7 +3,7 @@
 
 ## Plan
 1. Determine the last time the audit script was run (this should be everyday, so it 
-really should not be an issue.)  But current script is using  
+really should not be an issue.)  But current script is currently using  
     ```
     olddate=$(/bin/ls -lr | tail -2 | head -1 | grep -e '[[:digit:]]{8}' | awk '{ print $9 }')
     ``` 
@@ -19,8 +19,10 @@ else it should log an derror.  Error logging, actual, is way outside my coding e
 1. Check to see if the DriveInventory report exists.  Set drive inventory flag to Yes.
 1. Check to see if the NetApp report exists.  Set netapp flag to yes.
 1. Check to see if the CREM report exists.  Set CREM flag to yes.
-**NOTE:** These are all for yesterday.  The date format on these might be different, or could use
-the last modified of the file name to accomplish this same thing.
+
+    **NOTE:** These are all for yesterday.  The date format on these might be different, or could use
+    the last modified of the file name to accomplish this same thing.
+
 1. If all the Flags='Yes' then the script will proceed.
 1. Comparison uses diff to compare the old file with the new file and will output the results
 in the audit file for same date.
