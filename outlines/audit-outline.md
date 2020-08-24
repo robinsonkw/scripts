@@ -5,6 +5,7 @@ information from the relevant RHEL audit logs:
 * secure
 * meessages
 * rkhunter output
+
 Currently these logs are reviewed manually through searching the file.  The intent of this 
 script is to automate this process.
 ## Structure
