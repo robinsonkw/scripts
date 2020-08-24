@@ -13,11 +13,11 @@ Plan is to implement the following structure:
 1. Capture ISSO copy of logs (secure / messages ) by day.  Since the script will run everyday,
 say like 0300 we can capture the previous days logs from the MMM dd entry and output that to
 another file.
-'''
+```
 $ grep -e '$yesterday' < secure > $yesterday-secure.file
 $ grep -e '$yesterday' < messages < $yesterday-messages.file
-'''
-NOTE: These file paths will be replacec by absolute file paths based on the system.
+```
+**NOTE:** These file paths will be replacec by absolute file paths based on the system.
 1. Start capturing relevant audit data on the system
 * number logons vs. number logoffs
 * list of logons (sshd sessions)
@@ -26,12 +26,12 @@ NOTE: These file paths will be replacec by absolute file paths based on the syst
 * list of logoffs su
 * new group created
 * new user created/added
-'''
+```
 echo "New user added"
 grep -e 'useradd' < $yesterday-secure.file >> $yesterday-audit.report
 echo "New group added"
 grep -e 'useradd' < $yesterday-secure.file | grep -e '[n|N]ew [g|G]roup' >> $yesterday-audit.report
-'''
+```
 Look for both new group and new user.
 1. look for access denied
 '''
