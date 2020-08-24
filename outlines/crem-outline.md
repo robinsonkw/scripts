@@ -7,9 +7,9 @@ really should not be an issue.)  But current script is currently using
     ```
     olddate=$(/bin/ls -lr | tail -2 | head -1 | grep -e '[[:digit:]]{8}' | awk '{ print $9 }')
     ``` 
-to get the last folder created (which should have been last week for audting).  I would like
-to get this transfered into the file name, since this would be running every day, we could find
-the last modified file and use 
+    to get the last folder created (which should have been last week for audting).  I would like
+    to get this transfered into the file name, since this would be running every day, we could find
+    the last modified file and use 
     ```
     sed
     ```
