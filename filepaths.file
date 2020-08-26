@@ -1,15 +1,15 @@
 Netapp information
  
 /users/isso/NetApp
-Netapp.disks.serial.log.date
+Netapp.disks.serial.log.{date} # MM_dd_yyyy
  
 /users/isso/DriveInventory
-Drive_inventory_DATE_TIME
+Drive_inventory_DATE_TIME # mm_dd_YYYY
  
 /user/usso/idmgr
 Idmgr.disks
  
-/archive/isso/logs/Mar2020_CremRep
+/archive/isso/logs/{date}_CremRep
 Disk.inventory.now
 Tape.inventory.now
  
