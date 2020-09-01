@@ -1,18 +1,33 @@
 Netapp information
  
 /users/isso/NetApp
-Netapp.disks.serial.log.{date} # MM_dd_yyyy
+Netapp.disks.serial.log.{date} 	# MM_dd_yyyy
  
 /users/isso/DriveInventory
-Drive_inventory_DATE_TIME # mm_dd_YYYY
+drive_inventory_DATE_TIME 		# YYYY-mm-dd
  
+/users/isso/DriveInventory/DDN/GoldCopy
+sys01.log sys02.log
+
 /user/usso/idmgr
-Idmgr.disks
+Idmgr.disks 	# report
+/users/isso/idmgr/gold > provides serial numbers
  
-/archive/isso/logs/{date}_CremRep
-Disk.inventory.now
+/archive/isso/logs
+*_disk_inv > files that are created for the CremRep folder
+
+wickershams
+sam-i-am
+storagens2
+netapp
+dsmservns3
+
+/archive/isso/logs/{date}_CremRep   #MMMYYYY
+# Disk.inventory.now
 Tape.inventory.now
- 
+
 Secure logs for “session opened” and “session closed”
 Secure and message logs for “access denied” invalid failed falure warning
 Message logs for log space and usb
+
+cat [filename] | awk '{ print $(column number) }' > filename.output
