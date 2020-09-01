@@ -1,4 +1,8 @@
 # CREM Script
+## NOTES
+
+1. Have all tape, disk, netapp, DDN scripts run around the same time
+
 ## Overview
 
 ## Plan
