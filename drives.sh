@@ -5,6 +5,7 @@
 #Drive_inventory_DATE_TIME
 today=$(date +%Y%m%d)
 yesterday=$(date --date "Yesterday" "+%Y%m%d")
+twodays=$(date --date="2 days ago" "+%Y%m%d")
 DDNPATH='/users/isso/DriveInventory/DDN/status/'
 DDNFILE1='status-sys01'
 DDNFILE2='status-sys02'
@@ -27,6 +28,9 @@ datetime=$(date +%H:%M:%S)
 #last_thursday=`date --date "last Thursday" "+%m_%d_%Y"`
 #old_file=`find $location -name ${filename}_${last_thursday}"*"`
 #new_file=`find $location -name ${filename}_${this_thursday}"*"`
+
+
+
 copies() {
 
     cp ${DDNPATH}${DDNFILE1}    ${INVENTORYPATH}${DDNFILE1}-$yesterday
@@ -40,9 +44,26 @@ copies() {
 }
 ddn_compare() {
 
-    if [ -e ${INVENTORYPATH}${DDNFILE1} ]; then
-        
+    if [ -e ${INVENTORYPATH}${DDNFILE1}-$yesterday ]; then
+        if [ -e ${INVENTORYARCHIVE}${DDNFILE1}-$twodays ]; then
+            DDN1DIFF=$(diff -i ${INVENTORYARCHIVE}${DDNFILE1}-$twodays ${INVENTORYPATH}${DDNFILE1}-$yesterday)
+        else
+            echo"${INVENTORYARCHIVE}$DDNFILE1-$twodays did not exist for conparisson purposes."
+        fi
+    else
+        echo"${INVENTORYPATH}$DDNFILE1-$yesterday did not exist for comparisson purposes."
+    fi
 
+    if test -z "$DDN1DIFF"; then
+        echo "The variable DDN1DIFF is blank.  Correct to see output."
+    else
+        echo "
+DDN Status 01
+
+$DDN1DIFF >> ${INVENTORYPATH}'inventory-'$yesterday
+
+"
+    fi
 }
 
 header(){
