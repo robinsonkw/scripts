@@ -4,8 +4,8 @@
 #/users/isso/DriveInventory
 #Drive_inventory_DATE_TIME
 today=$(date +%Y%m%d)
-yesterday=$(date --date "Yesterday" "+%Y%m%d")
-twodays=$(date --date="2 days ago" "+%Y%m%d")
+yesterday=$(date --date="Yesterday" +%Y%m%d)
+twodays=$(date --date="2 days ago" +%Y%m%d)
 DDNPATH='/users/isso/DriveInventory/DDN/status/'
 DDNFILE1='status-sys01'
 DDNFILE2='status-sys02'
@@ -29,6 +29,11 @@ datetime=$(date +%H:%M:%S)
 #old_file=`find $location -name ${filename}_${last_thursday}"*"`
 #new_file=`find $location -name ${filename}_${this_thursday}"*"`
 
+echo $today
+echo $yesterday
+echo $twodays
+echo $datetime
+exit
 
 
 copies() {
