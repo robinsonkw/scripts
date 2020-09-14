@@ -8,7 +8,7 @@ if [ ! $OSTYPE=='darwin' ]; then
     yesterday=$(date --date="Yesterday" +%Y%m%d)
     twodays=$(date --date="2 days ago" +%Y%m%d)
 else
-    today=$(date %Y%m%d)
+    today=$(date +%Y%m%d)
     yesterday=$(date -j -v -1d +%Y%m%d)
     twodays=$(date -j -v -2d +%Y%m%d)
 fi
