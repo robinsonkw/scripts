@@ -4,10 +4,12 @@
 #/users/isso/DriveInventory
 #Drive_inventory_DATE_TIME
 if [ ! $OSTYPE=='darwin' ]; then
+    echo This system uses Linux/GNU date formatting.
     today=$(date +%Y%m%d)
     yesterday=$(date --date="Yesterday" +%Y%m%d)
     twodays=$(date --date="2 days ago" +%Y%m%d)
 else
+    echo This is a Mac. It uses BSD date fornatting.
     today=$(date +%Y%m%d)
     yesterday=$(date -j -v -1d +%Y%m%d)
     twodays=$(date -j -v -2d +%Y%m%d)
