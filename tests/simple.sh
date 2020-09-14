@@ -2,6 +2,12 @@
 paths=$(awk -F ',' '{ print $1 }' filepaths)
 files=$(awk -F ',' '{ print $2 }' filepaths)
 
-for i in $files; do
-    echo "$paths=${files}"
+while read files; do
+    printf "$paths"
+    printf "$files"
+    cat $paths/$files
+
 done
+exit
+
+
