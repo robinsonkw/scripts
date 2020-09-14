@@ -3,9 +3,16 @@
 ## VARIABLES ##
 #/users/isso/DriveInventory
 #Drive_inventory_DATE_TIME
-today=$(date +%Y%m%d)
-yesterday=$(date --date="Yesterday" +%Y%m%d)
-twodays=$(date --date="2 days ago" +%Y%m%d)
+if [ ! $OSTYPE=='darwin' ]; then
+    today=$(date +%Y%m%d)
+    yesterday=$(date --date="Yesterday" +%Y%m%d)
+    twodays=$(date --date="2 days ago" +%Y%m%d)
+else
+    today=$(date %Y%m%d)
+    yesterday=$(date -j -v -1d +%Y%m%d)
+    twodays=$(date -j -v -2d +%Y%m%d)
+fi
+
 DDNPATH='/users/isso/DriveInventory/DDN/status/'
 DDNFILE1='status-sys01'
 DDNFILE2='status-sys02'
