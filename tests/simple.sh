@@ -1,5 +1,7 @@
 #!/bin/bash
+paths=$(awk -F ',' '{ print $1 }' filepaths)
+files=$(awk -F ',' '{ print $2 }' filepaths)
 
-for var in $(compgen -v | grep -Ev '^(BASH)'); do
-    echo "$var=${!var}"
+for i in $files; do
+    echo "$paths=${files}"
 done
