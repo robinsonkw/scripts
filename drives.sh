@@ -36,10 +36,10 @@ datetime=$(date +%H:%M:%S)
 #old_file=`find $location -name ${filename}_${last_thursday}"*"`
 #new_file=`find $location -name ${filename}_${this_thursday}"*"`
 
-echo $today
-echo $yesterday
-echo $twodays
-echo $datetime
+echo $today is today.
+echo $yesterday is yesterday.
+echo $twodays is two days ago.
+echo $datetime is the current time.
 exit
 
 
