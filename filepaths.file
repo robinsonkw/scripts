@@ -1,0 +1,42 @@
+Netapp information
+ 
+/users/isso/NetApp
+Netapp.disks.serial.log.{date} 	# MM_dd_yyyy
+ 
+/users/isso/DriveInventory
+drive_inventory_DATE_TIME 		# YYYY-mm-dd
+ 
+/users/isso/DriveInventory/DDN/GoldCopy
+sys01.log sys02.log
+
+/user/usso/idmgr
+Idmgr.disks 	# report
+/users/isso/idmgr/gold > provides serial numbers
+ 
+/archive/isso/logs
+*_disk_inv > files that are created for the CremRep folder
+
+wickershams
+sam-i-am
+storagens2
+netapp
+dsmservns3
+
+/archive/isso/logs/{date}_CremRep   #MMMYYYY
+# Disk.inventory.now
+Tape.inventory.now
+
+Secure logs for “session opened” and “session closed”
+Secure and message logs for “access denied” invalid failed falure warning
+Message logs for log space and usb
+
+cat [filename] | awk '{ print $(column number) }' > filename.output
+
+# Filenames to copy
+/users/isso/DriveInventory/DDN/status/status-sys01 ...status-sys02	# can be a day behind
+/archive/usso/logs/wickershams_disk_inv
+/archive/isso/logs/sam-i-am_disk_inv
+/archive/isso/logs/storagens2_disk_inv
+/archive/isso/logs/netapp_disk_inv
+/archive/isso/logs/dsmservns3_disk_inv
+/users/isso/host-based-disks-inventory/disksInventory.log.idmgr.*  # runs in the AM, so would be current on the date run

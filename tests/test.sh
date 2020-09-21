@@ -3,23 +3,17 @@
 ## VARIABLES ##
 #/users/isso/DriveInventory
 #Drive_inventory_DATE_TIME
-if test -z "$OSTTYPE"; then
-	if [ $WSL_DISTRO_NAME=='Ubuntu' ]; then
-    	today=$(date +%Y%m%d)
-    	yesterday=$(date --date="Yesterday" +%Y%m%d)
-    	twodays=$(date --date="2 days ago" +%Y%m%d)
-	else
-	if [ $OSTYPE=='darwin' ]; then
-    	today=$(date +%Y%m%d)
-    	yesterday=$(date -j -v -1d +%Y%m%d)
-    	twodays=$(date -j -v -2d +%Y%m%d)
-	fi
-	fi
+if [ ! $OSTYPE=='darwin' ]; then
+    echo This system uses Linux/GNU date formatting.
+    today=$(date +%Y%m%d)
+    yesterday=$(date --date="Yesterday" +%Y%m%d)
+    twodays=$(date --date="2 days ago" +%Y%m%d)
+else
+    echo This is a Mac. It uses BSD date fornatting.
+    today=$(date +%Y%m%d)
+    yesterday=$(date -j -v -1d +%Y%m%d)
+    twodays=$(date -j -v -2d +%Y%m%d)
 fi
-
-#echo $today
-#echo $yesterday
-#echo $twodays
 
 DDNPATH='/users/isso/DriveInventory/DDN/status/'
 DDNFILE1='status-sys01'
