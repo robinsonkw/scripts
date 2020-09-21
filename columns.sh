@@ -10,7 +10,7 @@ h=$(grep -n "-" $file | awk -F  ':' '{ print $1 }')
 function printcolumn() {
 if [[ "$count" == 3 ]]
     then
-    text=$(tail -n +$h $file | awk -v col=$count '{ print $col }')
+    text=$(tail -n +$h $file | awk -v col=4 '{ print $col }')
     else
     echo count does not equal.
 fi
@@ -20,8 +20,7 @@ function columntest() {
     if [ -z "$text" ]
     then
         echo columnb is null
-    else
-        echo $text
+        return
     fi
 }
 
