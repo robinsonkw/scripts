@@ -4,9 +4,10 @@
 
 file='test.info'
 count=$(head -n 1 $file | awk '{ print NF; exit}')
-if [ -z "$count"==3 ]
+if [[ "$count" == 3 ]]
+    h=2
     then
-    tail -n +2 $file | awk '{ print $($count) }'
+    tail -n +$h $file | awk -v col=$count '{ print $col }'
     else
     echo count does not equal.
 fi
