@@ -5,7 +5,7 @@ col=$(awk -F ',' '{print $3}' filepaths)
 
 for i in $(cat filepaths);
 do
-	location=$(awk -F "," '{print $1"/"$2}' $i)
+	location=$(awk -F "," '{print $1 "/" $2}' $i)
 	column=$(awk -F "," '{print $3}' $i)
 	echo $location
 	echo $column
