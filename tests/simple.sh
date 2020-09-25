@@ -19,7 +19,7 @@ done
 for i in $(cat filepaths)
 do
     echo $i
->>>>>>> 3e41167f710499ae840c5ae72da6ddd56244d347
+
 done
 
 #location
