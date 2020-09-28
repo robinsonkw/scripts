@@ -30,8 +30,16 @@ lists=$(cat /tmp/.lists)
             #echo $last is False
         fi
     done <<< "$lists"
-
-echo Today\'s file is $current.
-echo The last file is $last.
+    inventory
+}
+function archives {
+    for i in $(cat /tmp/.listdiff)
+        do
+        mv  ./$i ./archive/$i
+        done
+}
+function inventory {
+    echo Doing the inventory.
+    archives
 }
 files
