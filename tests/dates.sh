@@ -13,6 +13,7 @@ while read file
     #    lists
     #else
     cat /tmp/.list | head -2 > /tmp/.lists
+    diff /tmp/.lists /tmp/.list | sed -n '2,$p' | awk -F "> " '{print $2}' > /tmp/.listdiff
     lists
 }
 
