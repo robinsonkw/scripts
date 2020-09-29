@@ -32,8 +32,16 @@ while read file
 
 function ddn {
     
+    status=$(echo $copyfile | grep "All")
+    if [ "$status" == 'All' ]
+    then 
     cat ${copyfile} >> ${home}/${inventoryfile}
     cat ${home}/${inventoryfile} | awk -v col=$column '{print $col}' > ${home}/$inventoryfile.sn
+    else
+    echo DDN error!
+    echo DDN error! > ${home}/log.file
+    fi
+
     return   
  
 }
