@@ -26,21 +26,22 @@ while read file
 #    cat ${home}/${inventoryfile} | awk -v col=$column '{print $col}' > ${home}/$inventoryfile.sn
     touch inventory-$today
     cat $inventoryfile.sn >> inventory-$today
-    mv $inventoryfile.sn ${home}/tmp/$inventoryfile.sn
+    mv $inventoryfile tmp
+    mv $inventoryfile.sn tmp
     done <<< "$filenames"
 }
 
 function ddn {
     
-    status=$(echo $copyfile | grep "All")
-    if [ "$status" == 'All' ]
-    then 
+#    status=$(echo $copyfile | grep "All")
+#    if [ $status = 'All' ]
+#    then 
     cat ${copyfile} >> ${home}/${inventoryfile}
     cat ${home}/${inventoryfile} | awk -v col=$column '{print $col}' > ${home}/$inventoryfile.sn
-    else
-    echo DDN error!
-    echo DDN error! > ${home}/log.file
-    fi
+#    else
+#    echo DDN error!
+#    echo DDN error! > ${home}/log.file
+#    fi
 
     return   
  
