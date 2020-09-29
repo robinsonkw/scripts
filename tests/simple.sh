@@ -9,7 +9,7 @@ filenames=$(cat filepaths)
 
 while read file
     do
-    filepath=$(echo $file | awk '{print $1}')
+    filepath=${home}$(echo $file | awk '{print $1}')
     filename=$(echo $file | awk '{print $2}')
     column=$(echo $file | awk '{print $3}')
     name=$(echo $file | awk '{print $4}')
