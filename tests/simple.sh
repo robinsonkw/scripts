@@ -19,18 +19,25 @@ while read file
     then
         ddn
     else
-        cp ${copyfile} ${home}/${inventoryfile}
-        cat ${home}/${inventoryfile} | awk -v col=$column '{print $col}' > ${home}/$inventoryfile.sn
+        createFile
     fi
 #    cp ${copyfile} ${home}/${inventoryfile}
 #    cat ${home}/${inventoryfile} | awk -v col=$column '{print $col}' > ${home}/$inventoryfile.sn
     touch inventory-$today
     cat $inventoryfile.sn >> inventory-$today
+    mv $inventoryfile.sn $inventoryfile
     mv $inventoryfile tmp
-    mv $inventoryfile.sn tmp
     done <<< "$filenames"
 }
-
+function createFile {    
+        cp ${copyfile} ${home}/${inventoryfile}
+        cat ${home}/${inventoryfile} | \
+            echo $name Serial Numbers found on $date
+            echo ============
+            awk -v col=$column '{print $col}' \
+            > ${home}/$inventoryfile.sn
+        return
+}
 function ddn {
     
 #    status=$(echo $copyfile | grep "All")
