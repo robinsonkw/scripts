@@ -23,8 +23,6 @@ while read file
         copyFile
         createFile
     fi
-#    cp ${copyfile} ${home}/${inventoryfile}
-#    cat ${home}/${inventoryfile} | awk -v col=$column '{print $col}' > ${home}/$inventoryfile.sn
     inventory    
     done <<< "$filenames"
 }
@@ -53,7 +51,6 @@ function inventory {
     mv $inventoryfile tmp
     return   
 }
-
 
 filepath
 
