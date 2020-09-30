@@ -1,3 +1,4 @@
+filepath        filename        column      name
 /DDN/status    status-01           3       ddn
 /DDN/status    status-02           3       ddn
 /archive       system_drive_inv    2       drives

@@ -5,7 +5,7 @@ home=$(pwd)
 
 function filepath {
 
-filenames=$(sed -n '1,$p' filepaths)
+filenames=$(sed -n '2,$p' filepaths)
 
 while read file
     do
