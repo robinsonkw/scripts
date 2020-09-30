@@ -32,10 +32,9 @@ while read file
 function createFile {    
         cp ${copyfile} ${home}/${inventoryfile}
         cat ${home}/${inventoryfile} | \
-            echo $name Serial Numbers found on $date
-            echo ============
-            awk -v col=$column '{print $col}' \
-            > ${home}/$inventoryfile.sn
+            echo $name Serial Numbers found on $date > ${home}$inventoryfile.sn
+            echo ============ > ${home}$inventoryfile.sn
+            awk -v col=$column '{print $col}' > ${home}/$inventoryfile.sn
         return
 }
 function ddn {
