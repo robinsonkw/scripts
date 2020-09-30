@@ -18,6 +18,7 @@ while read file
     if [ $name == 'ddn' ]
     then
         ddn
+        createFile
     else
         createFile
     fi
@@ -30,12 +31,13 @@ while read file
     done <<< "$filenames"
 }
 function createFile {    
-        cp ${copyfile} ${home}/${inventoryfile}
-            echo $name Serial Numbers found on $date >> ${home}/$inventoryfile.sn
-            echo ============ >> ${home}/$inventoryfile.sn
-            cat ${home}/${inventoryfile} | \
-            awk -v col=$column '{print $col}' >> ${home}/$inventoryfile.sn
-        return
+    cp ${copyfile} ${home}/${inventoryfile}
+    echo "" >> ${home}/${inventoryfile}
+    echo $name Serial Numbers found on $date >> ${home}/$inventoryfile.sn
+    echo ============ >> ${home}/$inventoryfile.sn
+    cat ${home}/${inventoryfile} | \
+        awk -v col=$column '{print $col}' >> ${home}/$inventoryfile.sn
+    return
 }
 function ddn {
     
@@ -43,14 +45,12 @@ function ddn {
 #    if [ $status = 'All' ]
 #    then 
     cat ${copyfile} >> ${home}/${inventoryfile}
-    cat ${home}/${inventoryfile} | awk -v col=$column '{print $col}' > ${home}/$inventoryfile.sn
+#    cat ${home}/${inventoryfile} | awk -v col=$column '{print $col}' > ${home}/$inventoryfile.sn
 #    else
 #    echo DDN error!
 #    echo DDN error! > ${home}/log.file
 #    fi
-
     return   
- 
 }
 
 filepath
