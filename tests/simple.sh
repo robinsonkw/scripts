@@ -17,21 +17,22 @@ while read file
     inventoryfile=${name}-$today
     if [ $name == 'ddn' ]
     then
-        ddn
+        ddnFile
         createFile
     else
+        copyFile
         createFile
     fi
 #    cp ${copyfile} ${home}/${inventoryfile}
 #    cat ${home}/${inventoryfile} | awk -v col=$column '{print $col}' > ${home}/$inventoryfile.sn
-    touch inventory-$today
-    cat $inventoryfile.sn >> inventory-$today
-    mv $inventoryfile.sn $inventoryfile
-    mv $inventoryfile tmp
+    inventory    
     done <<< "$filenames"
 }
-function createFile {    
+function copyFile {
     cp ${copyfile} ${home}/${inventoryfile}
+    return
+}
+function createFile {    
     echo "" >> ${home}/${inventoryfile}
     echo $name Serial Numbers found on $date >> ${home}/$inventoryfile.sn
     echo ============ >> ${home}/$inventoryfile.sn
@@ -39,19 +40,18 @@ function createFile {
         awk -v col=$column '{print $col}' >> ${home}/$inventoryfile.sn
     return
 }
-function ddn {
-    
-#    status=$(echo $copyfile | grep "All")
-#    if [ $status = 'All' ]
-#    then 
+function ddnFile {
     cat ${copyfile} >> ${home}/${inventoryfile}
-#    cat ${home}/${inventoryfile} | awk -v col=$column '{print $col}' > ${home}/$inventoryfile.sn
-#    else
-#    echo DDN error!
-#    echo DDN error! > ${home}/log.file
-#    fi
     return   
 }
+function inventory {
+    touch inventory-$today
+    cat $inventoryfile.sn >> inventory-$today
+    mv $inventoryfile.sn $inventoryfile
+    mv $inventoryfile tmp
+    return   
+}
+
 
 filepath
 
