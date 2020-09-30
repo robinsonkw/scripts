@@ -28,8 +28,6 @@ while read file
     inventory    
     done <<< "$filenames"
 }
-function ifStatement {
-}
 function copyFile {
     cp ${copyfile} ${home}/${inventoryfile}
     return
