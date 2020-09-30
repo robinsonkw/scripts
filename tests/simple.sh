@@ -28,16 +28,20 @@ while read file
     inventory    
     done <<< "$filenames"
 }
+function ifStatement {
+}
 function copyFile {
     cp ${copyfile} ${home}/${inventoryfile}
     return
 }
 function createFile {    
     echo "" >> ${home}/${inventoryfile}
-    echo $name Serial Numbers found on $date >> ${home}/$inventoryfile.sn
+    echo $name Serial Numbers found on $today >> ${home}/$inventoryfile.sn
     echo ============ >> ${home}/$inventoryfile.sn
     cat ${home}/${inventoryfile} | \
         awk -v col=$column '{print $col}' >> ${home}/$inventoryfile.sn
+    cat ${home}/${inventoryfile} | \
+        awk -v col=$column '{print $col}' >> ${home}/inventory.csv
     return
 }
 function ddnFile {
