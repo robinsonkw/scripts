@@ -1,6 +1,7 @@
 #!/bin/bash
 
 today=$(date +%Y%m%d)
+lastdate=$(
 home=$(pwd)
 
 function filepath {
