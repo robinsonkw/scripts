@@ -1,7 +1,7 @@
 #!/bin/bash
 
 today=$(date +%Y%m%d)
-lastdate=$(
+lastdate=$()   # get line from classified side
 home=$(pwd)
 
 function filepath {
@@ -52,6 +52,10 @@ function inventory {
     mv $inventoryfile tmp
     return   
 }
+
+# copy inventoryDiff function from high side; error checks for duplicate $today inventory file
+# ensures that the diff that runs is still comparing yesterday and today
+# declare the lastdate variable to be yesterday if lastdate == today
 
 filepath
 
