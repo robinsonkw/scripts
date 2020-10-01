@@ -49,7 +49,7 @@ function inventory {
     touch inventory-$today
     cat $inventoryfile.sn >> inventory-$today
     mv $inventoryfile.sn $inventoryfile
-    mv $inventoryfile tmp
+    mv $inventoryfile archive/
     return   
 }
 
