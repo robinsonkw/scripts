@@ -1,7 +1,7 @@
 #!/bin/bash
 
 today=$(date +%Y%m%d)
-lastdate=$()   # get line from classified side
+lastdate   # get line from classified side; runs in a function
 home=$(pwd)
 
 function filepath {
