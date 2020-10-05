@@ -18,13 +18,14 @@ while read file
     inventoryfile=${name}-$today
     if [ $name == 'ddn' ]
     then
-        ddnFile
+        ddnFile         # the DDN file is different and on two racks, so need to concatenate the two files into one
+                        # by appending the second ddn file to the first
         createFile
     else
-        copyFile
+        copyFile        # copy a regular file; no appending necessary
         createFile
     fi
-    inventory    
+    inventory           # runs the inventory function
     done <<< "$filenames"
 }
 function copyFile {
