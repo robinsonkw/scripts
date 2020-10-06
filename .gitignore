@@ -2,6 +2,7 @@
 .DS_Store
 .DS_store
 *.swp
+~
 
 # Folders
 .old/
