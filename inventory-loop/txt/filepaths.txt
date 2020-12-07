@@ -1,0 +1,5 @@
+filePath        fileName            column      name        lineBegin   lineEnd
+---             ---                 ---         ---         ---         ---
+/DDN/status    status-01            3           ddn         10          15
+/DDN/status    status-02            3           ddn         10          15
+/archive       system_drive_inv     2           drives      3           5
