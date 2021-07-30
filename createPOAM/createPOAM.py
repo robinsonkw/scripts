@@ -1,9 +1,4 @@
-# -*- coding: utf-8 -*-
-"""
-Spyder Editor
-
-This is a temporary script file.
-"""
+# coding: utf-8
 
 import xml.etree.ElementTree as ET
 import re
