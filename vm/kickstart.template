@@ -1,0 +1,49 @@
+#platform=x86, AMD64, or Intel EM64T                                                                                                
+#version=DEVEL
+# Install OS instead of upgrade
+install
+# Keyboard layouts
+keyboard 'us'
+# Root password
+rootpw --iscrypted $1$gSW.uH5N$KCsmkFGAPPx8kRSCzJxi4/
+# System language
+lang en_US
+# System authorization information
+auth  --useshadow  --passalgo=sha512
+# Use CDROM installation media
+cdrom
+# Use text mode install
+text
+# SELinux configuration
+selinux --enforcing
+# Do not configure the X Window System
+skipx
+
+
+# Firewall configuration
+firewall --disabled
+# Network information
+network  --device eth0 --bootproto statics -ip 10.42.0.10 --netmask 255.255.255.0 --gateway 10.42.0.1 --nameserver 10.42.0.1,128.165.4.4 --hostname ha-ansible --noipv6
+# Reboot after installation
+reboot
+# System timezone
+timezone America/Denver
+# System bootloader configuration
+bootloader --location=mbr
+# Clear the Master Boot Record
+zerombr
+# Partition clearing information
+clearpart --all --initlabel
+part / --fstype="xfs" --grow --size=1
+part swap --recommended
+
+%packages
+@anaconda-tools
+@base
+@desktop-debugging
+@hardware-monitoring
+@network-file-system-client
+@security-tools
+@system-admin-tools
+
+%end       
