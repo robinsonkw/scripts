@@ -105,7 +105,7 @@
       var_removable_partition: !!str /dev/cdrom
       var_selinux_policy_name: !!str targeted
       var_selinux_state: !!str enforcing
-      var_postfix_root_mail_alias: !!str system.administrator@mail.mil
+      var_postfix_root_mail_alias: !!str kwr@lanl.gov
       var_tftpd_secure_directory: !!str /var/lib/tftpboot
       var_sshd_disable_compression: !!str no
       var_rekey_limit_size: !!str 1G
