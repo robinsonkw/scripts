@@ -18,8 +18,6 @@ text
 selinux --enforcing
 # Do not configure the X Window System
 skipx
-
-
 # Firewall configuration
 firewall --disabled
 # Network information
