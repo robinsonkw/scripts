@@ -6,10 +6,10 @@ iso=/var/lib/kvm/services/images/ISO
 ks=/var/lib/kvm/scripts/ks
 
 virt-install \
-    --name ha-ansible \
-    --ram 4096 \
+    --name redhat \
+    --ram 8192 \
     --disk path=${utilities_path}/ha-ansible.img,size=20 \
-    --vcpus 2 \                                                                                                                     
+    --vcpus 2 \
     --os-type linux \
     --os-variant rhel8.2 \
     --network bridge=br0 \
