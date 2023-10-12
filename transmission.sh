@@ -2,11 +2,20 @@
 #
 # script to test cases for using arguments to control script behavior
 
+# variable paths (set these as desired)
 movies=/files/movies/
 tvshows=/files/tvshows/
 music=/files/music/
 games=/files/games/
-file=~/.scripts/trackers.file
+
+# script variables
+script_location=~/.scripts
+file=$script_location/trackers.file
+
+# test if transmission script has been run before
+
+
+# script flags
 
 while getopts "hm:tv:mu:rlt:" flag
 do
@@ -56,3 +65,4 @@ do
 			;;
 	esac
 done	
+
