@@ -18,7 +18,7 @@ file=$script_location/trackers.file
 
 # script flags
 
-while getopts "hm:t:mu:rlk:a:g:" flag
+while getopts "hm:t:u:rlk:a:g:" flag
 do
 	case $flag in
 		h) # handle the -h flag
@@ -37,7 +37,7 @@ do
 			printf "\n		with the default destination folder"
 			printf "\n	-m	adds the torrent link to transmission and sets the folder as movies"
 			printf "\n	-t	adds the torrent link for a tvshow"
-			printf "\n	-mu	adds the torrent link for a music-related link"
+			printf "\n	-u	adds the torrent link for a music-related link"
 			printf "\n	-g	adds the torrent link for a game-related file"
 			printf "\n	-k	adds trackers to the numbered torrents"
 			printf "\n	-l	lists the current torrent(s) status"
@@ -65,7 +65,7 @@ do
 			done <$file
 			clear
 			;;
-		mu) # handle the -mu flag with argument
+		u) # handle the -u flag with argument
 			transmission-remote -a $OPTARG -w $music
 			;;
 		r)
