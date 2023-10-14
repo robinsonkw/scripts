@@ -18,7 +18,7 @@ file=$script_location/trackers.file
 
 # script flags
 
-while getopts "hm:t:mu:rlk:a:" flag
+while getopts "hm:t:mu:rlk:a:g:" flag
 do
 	case $flag in
 		h) # handle the -h flag
@@ -29,7 +29,8 @@ do
 			printf "\n\nThe following locations are defined:"
 			printf "\n   movies default to:   \'$movies\'"
 			printf "\n   tvshows default to:  \'$tvshows\'"
-			printf "\n   music default to:    \'$music\'\n"
+			printf "\n   music default to:    \'$music\'"
+			printf "\n   games default to:    \'$games\'\n"
 			printf "\nThe script accepts the following arguments:"
 			printf "\n	-h 	displays this help file"
 			printf "\n	-a	adds the torrent link like normal \'transmission-remote -a\' command"
@@ -37,11 +38,13 @@ do
 			printf "\n	-m	adds the torrent link to transmission and sets the folder as movies"
 			printf "\n	-t	adds the torrent link for a tvshow"
 			printf "\n	-mu	adds the torrent link for a music-related link"
+			printf "\n	-g	adds the torrent link for a game-related file"
 			printf "\n	-k	adds trackers to the numbered torrents"
 			printf "\n	-l	lists the current torrent(s) status"
 			printf "\n	-r	restarts the transmission-daemon.service if it is hanging"
 			printf "\nThe script supports adding magnet links as long as they are enclosed in quotation marks\
-				\n\"<hyperlink>\" to ensure proper processing."
+				\n	e.g. format: tr -flag \"<hyperlink>\"" 
+			printf "\nto ensure proper processing.  [For best results enclose non-magnet links as well.]"
 			printf "\n\nNOTE: Some of these commands could conflict with actual transmission-remote commands.\
 				\nso be careful and use at your own risk!\
 				\n"
@@ -71,7 +74,10 @@ do
 		l)
 			transmission-remote -l
 			;;
-		\?) # handle invaalid options
+		g) # handle the game flag
+			transmission-remote -a $OPTARG -w $games
+			;;
+		\?) # handle invalid options
 			echo "That option is not valid.  Please try again."
 			;;
 	esac
