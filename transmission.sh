@@ -18,7 +18,7 @@ file=$script_location/trackers.file
 
 # script flags
 
-while getopts "hm:t:u:rlk:a:g:" flag
+while getopts "hm:t:u:rlk:a:g:zv:" flag
 do
 	case $flag in
 		h) # handle the -h flag
@@ -39,9 +39,11 @@ do
 			printf "\n	-t	adds the torrent link for a tvshow"
 			printf "\n	-u	adds the torrent link for a music-related link"
 			printf "\n	-g	adds the torrent link for a game-related file"
-			printf "\n	-k	adds trackers to the numbered torrents"
+			printf "\n	-k	adds trackers to the numbered torrents; i.e., 2; 1-5; 1,3,4"
 			printf "\n	-l	lists the current torrent(s) status"
 			printf "\n	-r	restarts the transmission-daemon.service if it is hanging"
+			printf "\n	-z	displays the tranmission-remote help page"
+			printf "\n	-v	verifies the torrent numbers specified; i.e., 2; 1-5; 1,3,4"
 			printf "\nThe script supports adding magnet links as long as they are enclosed in quotation marks\
 				\n	e.g. format: tr -flag \"<hyperlink>\"" 
 			printf "\nto ensure proper processing.  [For best results enclose non-magnet links as well.]"
@@ -76,6 +78,12 @@ do
 			;;
 		g) # handle the game flag
 			transmission-remote -a $OPTARG -w $games
+			;;
+		z) # display transmission-remote help file
+			transmission-remote -h | less
+			;;
+		v) # verifies torrents specified
+			transmission-remote -t[$OPTARGS] -v
 			;;
 		\?) # handle invalid options
 			echo "That option is not valid.  Please try again."
