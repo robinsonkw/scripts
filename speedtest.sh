@@ -5,4 +5,4 @@ current_date=$(date)
 
 echo "" >> $file
 echo $current_date >> $file
-speedtest-cli --bytes >> $file
+speedtest-cli >> $file
