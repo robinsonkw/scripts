@@ -1,7 +1,0 @@
-# UNCONFIGURED FSTAB FOR BASE SYSTEM
-192.168.1.212:/mnt/storage/movies       /mnt/nas/files/movies   nfs     nodiratime,relatime,nconnect=16,defaults        0       2
-192.168.1.212:/mnt/storage/music        /mnt/nas/files/music    nfs     nodiratime,relatime,nconnect=16,defaults        0       2
-192.168.1.212:/mnt/storage/tvshows      /mnt/nas/files/tvshows  nfs     nodiratime,relatime,nconnect=16,defaults        0       2
-192.168.1.212:/mnt/storage/photos       /mnt/nas/files/photos   nfs     nodiratime,relatime,nconnect=16,defaults        0       2
-192.168.1.212:/mnt/storage/books        /mnt/nas/files/books    nfs     nodiratime,relatime,nconnect=16,defaults        0       2
-192.168.1.212:/mnt/storage/plex         /mnt/nas/files/plex     nfs     nodiratime,relatime,nconnect=16,defaults        0       2
