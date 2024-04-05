@@ -8,6 +8,7 @@ movies=$file_path/movies/
 tvshows=$file_path/tvshows/
 music=$file_path/music/
 games=$file_path/games/
+bones=Bones\ \(2005\)\ \[720p\]/
 
 # script variables
 script_location=~/.scripts
@@ -18,7 +19,7 @@ file=$script_location/trackers.file
 
 # script flags
 
-while getopts "hm:t:u:rlk:a:g:zv:" flag
+while getopts "hm:t:u:rlk:a:g:zv:b:d" flag
 do
 	case $flag in
 		h) # handle the -h flag
@@ -44,6 +45,7 @@ do
 			printf "\n	-r	restarts the transmission-daemon.service if it is hanging"
 			printf "\n	-z	displays the tranmission-remote help page"
 			printf "\n	-v	verifies the torrent numbers specified; i.e., 2; 1-5; 1,3,4"
+			printf "\n	-d	display downloading torrent status"
 			printf "\nThe script supports adding magnet links as long as they are enclosed in quotation marks\
 				\n	e.g. format: tr -flag \"<hyperlink>\"" 
 			printf "\nto ensure proper processing.  [For best results enclose non-magnet links as well.]"
@@ -83,7 +85,14 @@ do
 			transmission-remote -h | less
 			;;
 		v) # verifies torrents specified
-			transmission-remote -t[$OPTARGS] -v
+			transmission-remote -t$OPTARG -v
+			;;
+		b) # argument for Bones tvshow torrents
+			transmission-remote -a $OPTARG -w $tvshows$bones
+			;;
+		d) # display downloads shortcut
+			transmission-remote -l | grep --color=auto 'Downloading'
+			printf "TOTAL: " transmission-remote -l | grep 'Downloading' | wc -l
 			;;
 		\?) # handle invalid options
 			echo "That option is not valid.  Please try again."
