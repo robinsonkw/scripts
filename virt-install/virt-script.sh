@@ -16,4 +16,5 @@ virt-install \
     --graphics vnc,port='-1',listen=0.0.0.0 \
     --os-variant almalinux9 \
     --console pty,target_type=serial \
+    --noautoconsole \
     --extra-args 'console=tty0 console=ttyS0,115200'
