@@ -7,9 +7,9 @@
 disk_path=/var/lib/libvirt/images/  # location the VM image file is located
 iso_path=/mnt/zfs/images/           # ISO location for install
 ks_path=/mnt/zfs/kickstart/         # location of ks.cfg files
-host_name='alma-vm'                   # host name of VM
-disk_size='20G'                       # disk size of VM
-disk_format='qcow2'                   # format of disk image file
+host_name=alma-vm                   # host name of VM
+disk_size=20                       # disk size of VM
+disk_format=qcow2                   # format of disk image file
 #isos=/mnt/zfs/isos/  # need to rename the folder eventually
 
 function create {
