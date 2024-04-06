@@ -8,7 +8,7 @@ movies=$file_path/movies/
 tvshows=$file_path/tvshows/
 music=$file_path/music/
 games=$file_path/games/
-bones=Bones\ \(2005\)\ \[720p\]/
+#bones=Bones\ \(2005\)\ \[720p\]/
 
 # script variables
 script_location=~/.scripts

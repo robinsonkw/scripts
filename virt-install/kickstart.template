@@ -5,7 +5,7 @@ install
 # Keyboard layouts
 keyboard 'us'
 # Root password
-rootpw --iscrypted $1$gSW.uH5N$KCsmkFGAPPx8kRSCzJxi4/
+rootpw --iscrypted $6$bHa1zkPDUxc4.Bb0$KIi9z1ZcgosRxYr5xFlOU6zsKEzVdihiNXc6nfqmTBQEWzm8bHTq.4IMawRb4UTXlf62w2AC80O5YCZWGoK5u0
 # System language
 lang en_US
 # System authorization information
