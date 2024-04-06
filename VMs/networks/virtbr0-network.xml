@@ -1,0 +1,9 @@
+<network>
+    <name>virt-bridge</name>
+    <bridge name="virtbr0" />
+    <forward mode="nat" />
+        <nat>
+            <address start="192.168.1.10" end="192.168.1.10" />
+        </nat>
+    <ip address="10.10.128.1" netmask="255.255.255.0" />
+</network>
