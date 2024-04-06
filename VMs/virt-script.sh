@@ -19,7 +19,7 @@ virt-install \
     --vcpus 2 \
     --memory memory=4096,currentMemory=2048 \
     --location ${iso_path}AlmaLinux-9.3-x86_64-dvd.iso \
-    --disk path=${disk_path},size=${disk_size},format=${disk_format},cache=none,discard=unmap \
+    --disk size=${disk_size},format=${disk_format},cache=none,discard=unmap \
     --network bridge=virtbr0 \
     --graphics vnc,listen=0.0.0.0 --noautoconsole \
     --os-variant almalinux9 \
