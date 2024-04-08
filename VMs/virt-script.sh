@@ -7,7 +7,7 @@
 disk_path=/var/lib/libvirt/images/  # location the VM image file is located
 iso_path=/mnt/zfs/images/           # ISO location for install
 ks_path=/mnt/zfs/kickstart/         # location of ks.cfg files
-host_name=alma-vm                   # host name of VM
+host_name=alma2-vm                   # host name of VM
 disk_size=20                       # disk size of VM
 disk_format=qcow2                   # format of disk image file
 #isos=/mnt/zfs/isos/  # need to rename the folder eventually
@@ -19,7 +19,7 @@ virt-install \
     --vcpus 2 \
     --memory memory=4096,currentMemory=2048 \
     --location ${iso_path}AlmaLinux-9.3-x86_64-dvd.iso \
-    --disk size=${disk_size},format=${disk_format},cache=none,discard=unmap \
+    --disk path=${disk_path}${host_name}.${disk_format},size=${disk_size},format=${disk_format},cache=none,discard=unmap \
     --network bridge=virtbr0 \
     --graphics vnc,listen=0.0.0.0 --noautoconsole \
     --os-variant almalinux9 \
