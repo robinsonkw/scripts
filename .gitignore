@@ -1,9 +1,80 @@
-# Files
-.DS_Store
-.DS_store
-*.swp
-~
+# =============================================
+# Dotfiles .gitignore - macOS + Dev Configs
+# =============================================
 
-# Folders
-.old/
-.tmp.driveupload/
+# General macOS junk
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+.Spotlight-V100
+.Trashes
+__MACOSX
+.fseventsd
+
+# Temporary / Cache files
+**/.cache/**
+**/Cache/**
+**/tmp/**
+**/__pycache__/**
+*.pyc
+*.pyo
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+
+# Environment secrets (IMPORTANT!)
+.env
+.env.local
+.env.*.local
+*.key
+*.pem
+*.crt
+sshpass*
+
+# Large / unnecessary folders
+**/node_modules/
+**/venv/
+**/.venv/
+**/env/
+**/.next/
+**/.nuxt/
+**/dist/
+**/build/
+
+# Editor / IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+Session.vim
+
+# Specific tool caches
+**/.zsh_history
+**/.fzf-history
+**/.pyenv/versions/*
+**/.local/share/zinit/*
+**/.config/*/Cache/*
+**/.config/Code/Cache/*
+**/.config/Code/CachedData/*
+
+# Sockets and runtime files
+*.sock
+**/sockets/**
+/.iterm2/sockets/*
+
+# Starship / Prompt caches (if any)
+starship.log
+
+# Neovim temporary files
+**/.config/nvim/.netrwhist
+**/.config/nvim/swap/
+**/.config/nvim/undo/
+**/.config/nvim/backup/
+
+# GitHub CLI / other CLIs
+**/.config/gh/hosts.yml   # contains tokens
