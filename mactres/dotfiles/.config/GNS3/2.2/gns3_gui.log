@@ -1,0 +1,21 @@
+2023-10-03 07:57:41 INFO logger.py:126 Log level: INFO
+2023-10-03 07:57:41 INFO main.py:263 GNS3 GUI version 2.2.38
+2023-10-03 07:57:41 INFO main.py:264 Copyright (c) 2007-2023 GNS3 Technologies Inc.
+2023-10-03 07:57:41 INFO main.py:265 Application started with /Applications/GNS3.app/Contents/MacOS/gns3
+2023-10-03 07:57:52 INFO sudo.py:54 Execute as admin: osascript -e do shell script "chown root:admin /Applications/GNS3.app/Contents/MacOS/ubridge && chmod 4750 /Applications/GNS3.app/Contents/MacOS/ubridge" with administrator privileges
+2023-10-03 07:58:12 CRITICAL progress_dialog.py:181 WaitForCommandWorker thread stopping with an error: Could not execute command "osascript -e 'do shell script "chown root:admin /Applications/GNS3.app/Contents/MacOS/ubridge && chmod 4750 /Applications/GNS3.app/Contents/MacOS/ubridge" with administrator privileges'": Command '['osascript', '-e', 'do shell script "chown root:admin /Applications/GNS3.app/Contents/MacOS/ubridge && chmod 4750 /Applications/GNS3.app/Contents/MacOS/ubridge" with administrator privileges']' returned non-zero exit status 1.
+2023-10-03 07:58:12 CRITICAL __init__.py:183 Could not execute command "osascript -e 'do shell script "chown root:admin /Applications/GNS3.app/Contents/MacOS/ubridge && chmod 4750 /Applications/GNS3.app/Contents/MacOS/ubridge" with administrator privileges'": Command '['osascript', '-e', 'do shell script "chown root:admin /Applications/GNS3.app/Contents/MacOS/ubridge && chmod 4750 /Applications/GNS3.app/Contents/MacOS/ubridge" with administrator privileges']' returned non-zero exit status 1.
+2023-10-03 07:59:47 CRITICAL __init__.py:396 Could not find a VM named 'GNS3 VM', is it imported in VMware or VirtualBox?
+2023-10-03 08:00:51 CRITICAL __init__.py:396 Could not find a VM named 'GNS3 VM', is it imported in VMware or VirtualBox?
+2023-10-03 08:01:21 CRITICAL __init__.py:396 Could not find a VM named 'GNS3 VM', is it imported in VMware or VirtualBox?
+2023-10-03 08:16:12 WARNING controller.py:485 The GNS3 VM (IP=192.168.177.128, NETWORK=192.168.177.0/24) is not on the same network as the local server (IP=127.0.0.1, NETWORK=127.0.0.0/8), please make sure the local server binding is in the same network as the GNS3 VM
+2023-10-03 08:16:12 WARNING controller.py:485 The GNS3 VM (IP=192.168.177.128, NETWORK=192.168.177.0/24) is not on the same network as the local server (IP=127.0.0.1, NETWORK=127.0.0.0/8), please make sure the local server binding is in the same network as the GNS3 VM
+2023-10-03 08:17:52 ERROR controller.py:452 Websocket notification stream error: The remote host closed the connection
+2023-10-03 08:17:52 ERROR controller.py:452 Websocket notification stream error: Unknown error
+2023-10-03 08:17:52 ERROR compute_manager.py:96 Error while getting compute list: Connection refused (localhost:3080)
+2023-10-03 08:18:03 INFO sudo.py:54 Execute as admin: osascript -e do shell script "chown root:admin /Applications/GNS3.app/Contents/MacOS/ubridge && chmod 4750 /Applications/GNS3.app/Contents/MacOS/ubridge" with administrator privileges
+2023-10-03 08:18:17 CRITICAL progress_dialog.py:181 WaitForCommandWorker thread stopping with an error: Could not execute command "osascript -e 'do shell script "chown root:admin /Applications/GNS3.app/Contents/MacOS/ubridge && chmod 4750 /Applications/GNS3.app/Contents/MacOS/ubridge" with administrator privileges'": Command '['osascript', '-e', 'do shell script "chown root:admin /Applications/GNS3.app/Contents/MacOS/ubridge && chmod 4750 /Applications/GNS3.app/Contents/MacOS/ubridge" with administrator privileges']' returned non-zero exit status 1.
+2023-10-03 08:18:17 CRITICAL __init__.py:183 Could not execute command "osascript -e 'do shell script "chown root:admin /Applications/GNS3.app/Contents/MacOS/ubridge && chmod 4750 /Applications/GNS3.app/Contents/MacOS/ubridge" with administrator privileges'": Command '['osascript', '-e', 'do shell script "chown root:admin /Applications/GNS3.app/Contents/MacOS/ubridge && chmod 4750 /Applications/GNS3.app/Contents/MacOS/ubridge" with administrator privileges']' returned non-zero exit status 1.
+2023-10-03 08:57:45 WARNING __init__.py:223 You have unsaved preferences in GNS3 VM.
+
+Continue without saving?

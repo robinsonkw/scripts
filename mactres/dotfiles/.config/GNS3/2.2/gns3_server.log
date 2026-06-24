@@ -1,0 +1,274 @@
+2023-10-03 08:21:09 INFO run.py:219 GNS3 server version 2.2.38
+2023-10-03 08:21:09 INFO run.py:221 Copyright (c) 2007-2023 GNS3 Technologies Inc.
+2023-10-03 08:21:09 INFO run.py:224 Config file /Users/kevin/.config/GNS3/2.2/gns3_server.conf loaded
+2023-10-03 08:21:09 WARNING run.py:230 Local mode is enabled. Beware, clients will have full control on your filesystem
+2023-10-03 08:21:09 INFO run.py:237 HTTP authentication is enabled with username 'admin'
+2023-10-03 08:21:09 INFO run.py:243 Running with Python 3.9.5 and has PID 34147
+2023-10-03 08:21:09 WARNING __init__.py:385 Config disk: image 'config.img' missing
+2023-10-03 08:21:09 INFO web_server.py:318 Starting server on 192.168.177.1:3080
+2023-10-03 08:21:09 INFO __init__.py:69 Load controller configuration file /Users/kevin/.config/GNS3/2.2/gns3_controller.conf
+2023-10-03 08:21:09 INFO __init__.py:73 Controller is starting
+2023-10-03 08:21:09 INFO __init__.py:289 Installing base configs in '/Users/kevin/GNS3/configs'
+2023-10-03 08:21:09 INFO compute.py:64 Create compute local
+2023-10-03 08:21:09 INFO compute.py:364 Connecting to compute 'local'
+2023-10-03 08:21:09 INFO web_log.py:206 192.168.177.1 [03/Oct/2023:14:21:09 +0000] "GET /v2/compute/capabilities HTTP/1.1" 200 520 "-" "Python/3.9 aiohttp/3.8.4"
+2023-10-03 08:21:09 INFO __init__.py:314 Start the GNS3 VM
+2023-10-03 08:21:09 INFO compute.py:64 Create compute vm
+2023-10-03 08:21:09 INFO __init__.py:612 Searching for VMware VMs in inventory file "/Users/kevin/Library/Application Support/VMware Fusion/vmInventory"
+2023-10-03 08:21:09 INFO __init__.py:430 Executing vmrun with command: '/Applications/VMware Fusion.app/Contents/Library/vmrun' -T fusion checkToolsState '/Users/kevin/Documents/virtual-machines/gns3/GNS3 VM.vmwarevm/GNS3 VM.vmx'
+2023-10-03 08:21:09 INFO web_log.py:206 192.168.177.1 [03/Oct/2023:14:21:09 +0000] "GET /v2/version HTTP/1.1" 200 227 "-" "GNS3 QT Client v2.2.38"
+2023-10-03 08:21:09 INFO notification_handler.py:50 New client has connected to compute WebSocket
+2023-10-03 08:21:09 INFO compute.py:431 Connected to compute 'local' WebSocket 'http://192.168.177.1:3080/v2/compute/notifications/ws'
+2023-10-03 08:21:09 INFO web_log.py:206 192.168.177.1 [03/Oct/2023:14:21:09 +0000] "GET /v2/version HTTP/1.1" 200 227 "-" "GNS3 QT Client v2.2.38"
+2023-10-03 08:21:09 INFO notification_handler.py:73 New client has connected to controller WebSocket
+2023-10-03 08:21:09 INFO notification_handler.py:73 New client has connected to controller WebSocket
+2023-10-03 08:21:09 INFO web_log.py:206 192.168.177.1 [03/Oct/2023:14:21:09 +0000] "GET /v2/version HTTP/1.1" 200 227 "-" "GNS3 QT Client v2.2.38"
+2023-10-03 08:21:09 INFO web_log.py:206 192.168.177.1 [03/Oct/2023:14:21:09 +0000] "GET /v2/version HTTP/1.1" 200 227 "-" "GNS3 QT Client v2.2.38"
+2023-10-03 08:21:09 INFO web_log.py:206 192.168.177.1 [03/Oct/2023:14:21:09 +0000] "GET /v2/templates HTTP/1.1" 200 2501 "-" "GNS3 QT Client v2.2.38"
+2023-10-03 08:21:09 INFO web_log.py:206 192.168.177.1 [03/Oct/2023:14:21:09 +0000] "GET /v2/computes HTTP/1.1" 200 1392 "-" "GNS3 QT Client v2.2.38"
+2023-10-03 08:21:09 INFO web_log.py:206 192.168.177.1 [03/Oct/2023:14:21:09 +0000] "GET /v2/appliances?symbol_theme=Classic HTTP/1.1" 200 185 "-" "GNS3 QT Client v2.2.38"
+2023-10-03 08:21:09 INFO web_log.py:206 192.168.177.1 [03/Oct/2023:14:21:09 +0000] "GET /v2/gns3vm HTTP/1.1" 200 381 "-" "GNS3 QT Client v2.2.38"
+2023-10-03 08:21:09 INFO web_log.py:206 192.168.177.1 [03/Oct/2023:14:21:09 +0000] "GET /v2/gns3vm HTTP/1.1" 200 381 "-" "GNS3 QT Client v2.2.38"
+2023-10-03 08:21:09 INFO web_log.py:206 192.168.177.1 [03/Oct/2023:14:21:09 +0000] "GET /v2/iou_license HTTP/1.1" 200 239 "-" "GNS3 QT Client v2.2.38"
+2023-10-03 08:21:09 INFO web_log.py:206 192.168.177.1 [03/Oct/2023:14:21:09 +0000] "GET /v2/templates HTTP/1.1" 200 2501 "-" "GNS3 QT Client v2.2.38"
+2023-10-03 08:21:09 INFO web_log.py:206 192.168.177.1 [03/Oct/2023:14:21:09 +0000] "GET /v2/appliances?symbol_theme=Classic HTTP/1.1" 200 185 "-" "GNS3 QT Client v2.2.38"
+2023-10-03 08:21:09 INFO web_log.py:206 192.168.177.1 [03/Oct/2023:14:21:09 +0000] "GET /v2/computes HTTP/1.1" 200 1392 "-" "GNS3 QT Client v2.2.38"
+2023-10-03 08:21:10 INFO web_log.py:206 192.168.177.1 [03/Oct/2023:14:21:09 +0000] "GET /v2/gns3vm HTTP/1.1" 200 381 "-" "GNS3 QT Client v2.2.38"
+2023-10-03 08:21:10 INFO web_log.py:206 192.168.177.1 [03/Oct/2023:14:21:09 +0000] "GET /v2/gns3vm HTTP/1.1" 200 381 "-" "GNS3 QT Client v2.2.38"
+2023-10-03 08:21:10 INFO web_log.py:206 192.168.177.1 [03/Oct/2023:14:21:09 +0000] "GET /v2/iou_license HTTP/1.1" 200 239 "-" "GNS3 QT Client v2.2.38"
+2023-10-03 08:21:10 INFO web_log.py:206 192.168.177.1 [03/Oct/2023:14:21:10 +0000] "GET /v2/projects HTTP/1.1" 200 183 "-" "GNS3 QT Client v2.2.38"
+2023-10-03 08:21:10 INFO web_log.py:206 192.168.177.1 [03/Oct/2023:14:21:10 +0000] "GET /v2/projects HTTP/1.1" 200 183 "-" "GNS3 QT Client v2.2.38"
+2023-10-03 08:21:10 INFO __init__.py:430 Executing vmrun with command: '/Applications/VMware Fusion.app/Contents/Library/vmrun' -T fusion list
+2023-10-03 08:21:10 INFO vmware_gns3_vm.py:153 Update GNS3 VM vCPUs and RAM settings
+2023-10-03 08:21:10 INFO vmware_gns3_vm.py:87 GNS3 VM vCPU count set to 1 and RAM amount set to 2048
+2023-10-03 08:21:10 INFO vmware_gns3_vm.py:156 Update GNS3 VM Hardware Virtualization setting
+2023-10-03 08:21:10 INFO __init__.py:430 Executing vmrun with command: '/Applications/VMware Fusion.app/Contents/Library/vmrun' -T fusion start '/Users/kevin/Documents/virtual-machines/gns3/GNS3 VM.vmwarevm/GNS3 VM.vmx'
+2023-10-03 08:21:10 INFO notification_handler.py:82 Client has disconnected from controller WebSocket
+2023-10-03 08:21:10 INFO web_log.py:206 192.168.177.1 [03/Oct/2023:14:21:09 +0000] "GET /v2/notifications/ws HTTP/1.1" 200 0 "-" "-"
+2023-10-03 08:21:12 INFO web_log.py:206 192.168.177.1 [03/Oct/2023:14:21:12 +0000] "GET /v2/version HTTP/1.1" 200 227 "-" "GNS3 QT Client v2.2.38"
+2023-10-03 08:21:12 INFO vmware_gns3_vm.py:164 GNS3 VM has been started
+2023-10-03 08:21:12 INFO vmware_gns3_vm.py:169 Waiting for GNS3 VM IP
+2023-10-03 08:21:32 INFO vmware_gns3_vm.py:188 GNS3 VM IP address set to 192.168.177.128
+2023-10-03 08:21:42 INFO compute.py:364 Connecting to compute 'vm'
+2023-10-03 08:21:42 INFO compute.py:431 Connected to compute 'vm' WebSocket 'http://192.168.177.128:80/v2/compute/notifications/ws'
+2023-10-03 08:21:42 INFO web_log.py:206 192.168.177.1 [03/Oct/2023:14:21:42 +0000] "GET /v2/compute/network/interfaces HTTP/1.1" 200 3768 "-" "Python/3.9 aiohttp/3.8.4"
+2023-10-03 08:26:42 INFO compute.py:457 Connection closed to compute 'vm' WebSocket 'http://192.168.177.128:80/v2/compute/notifications/ws'
+2023-10-03 08:26:43 INFO compute.py:364 Connecting to compute 'vm'
+2023-10-03 08:26:59 INFO web_log.py:206 192.168.177.1 [03/Oct/2023:14:26:59 +0000] "GET /v2/gns3vm HTTP/1.1" 200 381 "-" "GNS3 QT Client v2.2.38"
+2023-10-03 08:26:59 INFO web_log.py:206 192.168.177.1 [03/Oct/2023:14:26:59 +0000] "GET /v2/iou_license HTTP/1.1" 200 239 "-" "GNS3 QT Client v2.2.38"
+2023-10-03 08:26:59 INFO __init__.py:69 Load controller configuration file /Users/kevin/.config/GNS3/2.2/gns3_controller.conf
+2023-10-03 08:26:59 INFO web_log.py:206 192.168.177.1 [03/Oct/2023:14:26:59 +0000] "GET /v2/gns3vm/engines HTTP/1.1" 200 1302 "-" "GNS3 QT Client v2.2.38"
+2023-10-03 08:26:59 INFO __init__.py:612 Searching for VMware VMs in inventory file "/Users/kevin/Library/Application Support/VMware Fusion/vmInventory"
+2023-10-03 08:26:59 INFO web_log.py:206 192.168.177.1 [03/Oct/2023:14:26:59 +0000] "GET /v2/gns3vm/engines/vmware/vms HTTP/1.1" 200 292 "-" "GNS3 QT Client v2.2.38"
+2023-10-03 08:27:03 WARNING compute.py:367 Cannot connect to compute 'vm': Timeout error for GET call to http://192.168.177.128:80/v2/compute/capabilities after 20s
+2023-10-03 08:27:08 INFO compute.py:364 Connecting to compute 'vm'
+2023-10-03 08:27:29 WARNING compute.py:367 Cannot connect to compute 'vm': Timeout error for GET call to http://192.168.177.128:80/v2/compute/capabilities after 20s
+2023-10-03 08:27:34 INFO compute.py:364 Connecting to compute 'vm'
+2023-10-03 08:27:55 WARNING compute.py:367 Cannot connect to compute 'vm': Timeout error for GET call to http://192.168.177.128:80/v2/compute/capabilities after 20s
+2023-10-03 08:28:00 INFO compute.py:364 Connecting to compute 'vm'
+2023-10-03 08:28:21 WARNING compute.py:367 Cannot connect to compute 'vm': Timeout error for GET call to http://192.168.177.128:80/v2/compute/capabilities after 20s
+2023-10-03 08:28:26 INFO compute.py:364 Connecting to compute 'vm'
+2023-10-03 08:28:26 WARNING compute.py:367 Cannot connect to compute 'vm': Cannot connect to host 192.168.177.128:80 ssl:default [Host is down]
+2023-10-03 08:28:31 INFO compute.py:364 Connecting to compute 'vm'
+2023-10-03 08:28:31 WARNING compute.py:367 Cannot connect to compute 'vm': Cannot connect to host 192.168.177.128:80 ssl:default [Host is down]
+2023-10-03 08:28:36 INFO compute.py:364 Connecting to compute 'vm'
+2023-10-03 08:28:36 WARNING compute.py:367 Cannot connect to compute 'vm': Cannot connect to host 192.168.177.128:80 ssl:default [Host is down]
+2023-10-03 08:28:41 INFO compute.py:364 Connecting to compute 'vm'
+2023-10-03 08:29:02 WARNING compute.py:367 Cannot connect to compute 'vm': Timeout error for GET call to http://192.168.177.128:80/v2/compute/capabilities after 20s
+2023-10-03 08:29:07 INFO compute.py:364 Connecting to compute 'vm'
+2023-10-03 08:29:07 WARNING compute.py:367 Cannot connect to compute 'vm': Cannot connect to host 192.168.177.128:80 ssl:default [Host is down]
+2023-10-03 08:29:12 INFO compute.py:364 Connecting to compute 'vm'
+2023-10-03 08:29:12 WARNING compute.py:367 Cannot connect to compute 'vm': Cannot connect to host 192.168.177.128:80 ssl:default [Host is down]
+2023-10-03 08:29:12 ERROR compute.py:373 Could not connect to compute 'vm' after multiple attempts: Cannot connect to host 192.168.177.128:80 ssl:default [Host is down]
+2023-10-03 08:29:17 INFO compute.py:364 Connecting to compute 'vm'
+2023-10-03 08:29:38 WARNING compute.py:367 Cannot connect to compute 'vm': Timeout error for GET call to http://192.168.177.128:80/v2/compute/capabilities after 20s
+2023-10-03 08:29:43 INFO compute.py:364 Connecting to compute 'vm'
+2023-10-03 08:29:43 WARNING compute.py:367 Cannot connect to compute 'vm': Cannot connect to host 192.168.177.128:80 ssl:default [Host is down]
+2023-10-03 08:29:48 INFO compute.py:364 Connecting to compute 'vm'
+2023-10-03 08:29:48 WARNING compute.py:367 Cannot connect to compute 'vm': Cannot connect to host 192.168.177.128:80 ssl:default [Host is down]
+2023-10-03 08:29:53 INFO compute.py:364 Connecting to compute 'vm'
+2023-10-03 08:30:14 WARNING compute.py:367 Cannot connect to compute 'vm': Timeout error for GET call to http://192.168.177.128:80/v2/compute/capabilities after 20s
+2023-10-03 08:30:19 INFO compute.py:364 Connecting to compute 'vm'
+2023-10-03 08:30:19 WARNING compute.py:367 Cannot connect to compute 'vm': Cannot connect to host 192.168.177.128:80 ssl:default [Host is down]
+2023-10-03 08:30:24 INFO compute.py:364 Connecting to compute 'vm'
+2023-10-03 08:30:24 WARNING compute.py:367 Cannot connect to compute 'vm': Cannot connect to host 192.168.177.128:80 ssl:default [Host is down]
+2023-10-03 08:30:29 INFO compute.py:364 Connecting to compute 'vm'
+2023-10-03 08:30:40 INFO web_log.py:206 192.168.177.1 [03/Oct/2023:14:30:40 +0000] "GET /v2/computes HTTP/1.1" 200 1831 "-" "GNS3 QT Client v2.2.38"
+2023-10-03 08:30:50 WARNING compute.py:367 Cannot connect to compute 'vm': Timeout error for GET call to http://192.168.177.128:80/v2/compute/capabilities after 20s
+2023-10-03 08:30:55 INFO compute.py:364 Connecting to compute 'vm'
+2023-10-03 08:30:55 WARNING compute.py:367 Cannot connect to compute 'vm': Cannot connect to host 192.168.177.128:80 ssl:default [Host is down]
+2023-10-03 08:31:00 INFO compute.py:364 Connecting to compute 'vm'
+2023-10-03 08:31:00 WARNING compute.py:367 Cannot connect to compute 'vm': Cannot connect to host 192.168.177.128:80 ssl:default [Host is down]
+2023-10-03 08:31:05 INFO compute.py:364 Connecting to compute 'vm'
+2023-10-03 08:31:26 WARNING compute.py:367 Cannot connect to compute 'vm': Timeout error for GET call to http://192.168.177.128:80/v2/compute/capabilities after 20s
+2023-10-03 08:31:31 INFO compute.py:364 Connecting to compute 'vm'
+2023-10-03 08:31:31 WARNING compute.py:367 Cannot connect to compute 'vm': Cannot connect to host 192.168.177.128:80 ssl:default [Host is down]
+2023-10-03 08:31:36 INFO compute.py:364 Connecting to compute 'vm'
+2023-10-03 08:31:36 WARNING compute.py:367 Cannot connect to compute 'vm': Cannot connect to host 192.168.177.128:80 ssl:default [Host is down]
+2023-10-03 08:31:41 INFO compute.py:364 Connecting to compute 'vm'
+2023-10-03 08:32:02 WARNING compute.py:367 Cannot connect to compute 'vm': Timeout error for GET call to http://192.168.177.128:80/v2/compute/capabilities after 20s
+2023-10-03 08:32:07 INFO compute.py:364 Connecting to compute 'vm'
+2023-10-03 08:32:07 WARNING compute.py:367 Cannot connect to compute 'vm': Cannot connect to host 192.168.177.128:80 ssl:default [Host is down]
+2023-10-03 08:32:12 INFO compute.py:364 Connecting to compute 'vm'
+2023-10-03 08:32:12 WARNING compute.py:367 Cannot connect to compute 'vm': Cannot connect to host 192.168.177.128:80 ssl:default [Host is down]
+2023-10-03 08:32:17 INFO compute.py:364 Connecting to compute 'vm'
+2023-10-03 08:32:38 WARNING compute.py:367 Cannot connect to compute 'vm': Timeout error for GET call to http://192.168.177.128:80/v2/compute/capabilities after 20s
+2023-10-03 08:32:43 INFO compute.py:364 Connecting to compute 'vm'
+2023-10-03 08:32:43 WARNING compute.py:367 Cannot connect to compute 'vm': Cannot connect to host 192.168.177.128:80 ssl:default [Host is down]
+2023-10-03 08:32:48 INFO compute.py:364 Connecting to compute 'vm'
+2023-10-03 08:32:48 WARNING compute.py:367 Cannot connect to compute 'vm': Cannot connect to host 192.168.177.128:80 ssl:default [Host is down]
+2023-10-03 08:32:53 INFO compute.py:364 Connecting to compute 'vm'
+2023-10-03 08:33:14 WARNING compute.py:367 Cannot connect to compute 'vm': Timeout error for GET call to http://192.168.177.128:80/v2/compute/capabilities after 20s
+2023-10-03 08:33:19 INFO compute.py:364 Connecting to compute 'vm'
+2023-10-03 08:33:19 WARNING compute.py:367 Cannot connect to compute 'vm': Cannot connect to host 192.168.177.128:80 ssl:default [Host is down]
+2023-10-03 08:33:24 INFO compute.py:364 Connecting to compute 'vm'
+2023-10-03 08:33:24 WARNING compute.py:367 Cannot connect to compute 'vm': Cannot connect to host 192.168.177.128:80 ssl:default [Host is down]
+2023-10-03 08:33:29 INFO compute.py:364 Connecting to compute 'vm'
+2023-10-03 08:33:50 WARNING compute.py:367 Cannot connect to compute 'vm': Timeout error for GET call to http://192.168.177.128:80/v2/compute/capabilities after 20s
+2023-10-03 08:33:55 INFO compute.py:364 Connecting to compute 'vm'
+2023-10-03 08:33:55 WARNING compute.py:367 Cannot connect to compute 'vm': Cannot connect to host 192.168.177.128:80 ssl:default [Host is down]
+2023-10-03 08:34:00 INFO compute.py:364 Connecting to compute 'vm'
+2023-10-03 08:34:00 WARNING compute.py:367 Cannot connect to compute 'vm': Cannot connect to host 192.168.177.128:80 ssl:default [Host is down]
+2023-10-03 08:34:05 INFO compute.py:364 Connecting to compute 'vm'
+2023-10-03 08:34:26 WARNING compute.py:367 Cannot connect to compute 'vm': Timeout error for GET call to http://192.168.177.128:80/v2/compute/capabilities after 20s
+2023-10-03 08:34:31 INFO compute.py:364 Connecting to compute 'vm'
+2023-10-03 08:34:31 WARNING compute.py:367 Cannot connect to compute 'vm': Cannot connect to host 192.168.177.128:80 ssl:default [Host is down]
+2023-10-03 08:34:36 INFO compute.py:364 Connecting to compute 'vm'
+2023-10-03 08:34:36 WARNING compute.py:367 Cannot connect to compute 'vm': Cannot connect to host 192.168.177.128:80 ssl:default [Host is down]
+2023-10-03 08:34:41 INFO compute.py:364 Connecting to compute 'vm'
+2023-10-03 08:35:02 WARNING compute.py:367 Cannot connect to compute 'vm': Timeout error for GET call to http://192.168.177.128:80/v2/compute/capabilities after 20s
+2023-10-03 08:35:07 INFO compute.py:364 Connecting to compute 'vm'
+2023-10-03 08:35:07 WARNING compute.py:367 Cannot connect to compute 'vm': Cannot connect to host 192.168.177.128:80 ssl:default [Host is down]
+2023-10-03 08:35:12 INFO compute.py:364 Connecting to compute 'vm'
+2023-10-03 08:35:12 WARNING compute.py:367 Cannot connect to compute 'vm': Cannot connect to host 192.168.177.128:80 ssl:default [Host is down]
+2023-10-03 08:35:17 INFO compute.py:364 Connecting to compute 'vm'
+2023-10-03 08:35:38 WARNING compute.py:367 Cannot connect to compute 'vm': Timeout error for GET call to http://192.168.177.128:80/v2/compute/capabilities after 20s
+2023-10-03 08:35:43 INFO compute.py:364 Connecting to compute 'vm'
+2023-10-03 08:35:43 WARNING compute.py:367 Cannot connect to compute 'vm': Cannot connect to host 192.168.177.128:80 ssl:default [Host is down]
+2023-10-03 08:35:48 INFO compute.py:364 Connecting to compute 'vm'
+2023-10-03 08:35:48 WARNING compute.py:367 Cannot connect to compute 'vm': Cannot connect to host 192.168.177.128:80 ssl:default [Host is down]
+2023-10-03 08:35:53 INFO compute.py:364 Connecting to compute 'vm'
+2023-10-03 08:36:14 WARNING compute.py:367 Cannot connect to compute 'vm': Timeout error for GET call to http://192.168.177.128:80/v2/compute/capabilities after 20s
+2023-10-03 08:36:19 INFO compute.py:364 Connecting to compute 'vm'
+2023-10-03 08:36:40 WARNING compute.py:367 Cannot connect to compute 'vm': Timeout error for GET call to http://192.168.177.128:80/v2/compute/capabilities after 20s
+2023-10-03 08:36:45 INFO compute.py:364 Connecting to compute 'vm'
+2023-10-03 08:37:06 WARNING compute.py:367 Cannot connect to compute 'vm': Timeout error for GET call to http://192.168.177.128:80/v2/compute/capabilities after 20s
+2023-10-03 08:37:11 INFO compute.py:364 Connecting to compute 'vm'
+2023-10-03 08:37:32 WARNING compute.py:367 Cannot connect to compute 'vm': Timeout error for GET call to http://192.168.177.128:80/v2/compute/capabilities after 20s
+2023-10-03 08:37:37 INFO compute.py:364 Connecting to compute 'vm'
+2023-10-03 08:37:58 WARNING compute.py:367 Cannot connect to compute 'vm': Timeout error for GET call to http://192.168.177.128:80/v2/compute/capabilities after 20s
+2023-10-03 08:38:03 INFO compute.py:364 Connecting to compute 'vm'
+2023-10-03 08:38:24 WARNING compute.py:367 Cannot connect to compute 'vm': Timeout error for GET call to http://192.168.177.128:80/v2/compute/capabilities after 20s
+2023-10-03 08:38:29 INFO compute.py:364 Connecting to compute 'vm'
+2023-10-03 08:38:50 WARNING compute.py:367 Cannot connect to compute 'vm': Timeout error for GET call to http://192.168.177.128:80/v2/compute/capabilities after 20s
+2023-10-03 08:38:55 INFO compute.py:364 Connecting to compute 'vm'
+2023-10-03 08:39:16 WARNING compute.py:367 Cannot connect to compute 'vm': Timeout error for GET call to http://192.168.177.128:80/v2/compute/capabilities after 20s
+2023-10-03 08:39:21 INFO compute.py:364 Connecting to compute 'vm'
+2023-10-03 08:39:42 WARNING compute.py:367 Cannot connect to compute 'vm': Timeout error for GET call to http://192.168.177.128:80/v2/compute/capabilities after 20s
+2023-10-03 08:39:47 INFO compute.py:364 Connecting to compute 'vm'
+2023-10-03 08:40:08 WARNING compute.py:367 Cannot connect to compute 'vm': Timeout error for GET call to http://192.168.177.128:80/v2/compute/capabilities after 20s
+2023-10-03 08:40:13 INFO compute.py:364 Connecting to compute 'vm'
+2023-10-03 08:40:34 WARNING compute.py:367 Cannot connect to compute 'vm': Timeout error for GET call to http://192.168.177.128:80/v2/compute/capabilities after 20s
+2023-10-03 08:40:39 INFO compute.py:364 Connecting to compute 'vm'
+2023-10-03 08:41:00 WARNING compute.py:367 Cannot connect to compute 'vm': Timeout error for GET call to http://192.168.177.128:80/v2/compute/capabilities after 20s
+2023-10-03 08:41:05 INFO compute.py:364 Connecting to compute 'vm'
+2023-10-03 08:41:26 WARNING compute.py:367 Cannot connect to compute 'vm': Timeout error for GET call to http://192.168.177.128:80/v2/compute/capabilities after 20s
+2023-10-03 08:41:31 INFO compute.py:364 Connecting to compute 'vm'
+2023-10-03 08:41:52 WARNING compute.py:367 Cannot connect to compute 'vm': Timeout error for GET call to http://192.168.177.128:80/v2/compute/capabilities after 20s
+2023-10-03 08:41:57 INFO compute.py:364 Connecting to compute 'vm'
+2023-10-03 08:42:18 WARNING compute.py:367 Cannot connect to compute 'vm': Timeout error for GET call to http://192.168.177.128:80/v2/compute/capabilities after 20s
+2023-10-03 08:42:23 INFO compute.py:364 Connecting to compute 'vm'
+2023-10-03 08:42:44 WARNING compute.py:367 Cannot connect to compute 'vm': Timeout error for GET call to http://192.168.177.128:80/v2/compute/capabilities after 20s
+2023-10-03 08:42:49 INFO compute.py:364 Connecting to compute 'vm'
+2023-10-03 08:43:10 WARNING compute.py:367 Cannot connect to compute 'vm': Timeout error for GET call to http://192.168.177.128:80/v2/compute/capabilities after 20s
+2023-10-03 08:43:15 INFO compute.py:364 Connecting to compute 'vm'
+2023-10-03 08:43:36 WARNING compute.py:367 Cannot connect to compute 'vm': Timeout error for GET call to http://192.168.177.128:80/v2/compute/capabilities after 20s
+2023-10-03 08:43:41 INFO compute.py:364 Connecting to compute 'vm'
+2023-10-03 08:44:02 WARNING compute.py:367 Cannot connect to compute 'vm': Timeout error for GET call to http://192.168.177.128:80/v2/compute/capabilities after 20s
+2023-10-03 08:44:07 INFO compute.py:364 Connecting to compute 'vm'
+2023-10-03 08:44:28 WARNING compute.py:367 Cannot connect to compute 'vm': Timeout error for GET call to http://192.168.177.128:80/v2/compute/capabilities after 20s
+2023-10-03 08:44:33 INFO compute.py:364 Connecting to compute 'vm'
+2023-10-03 08:44:54 WARNING compute.py:367 Cannot connect to compute 'vm': Timeout error for GET call to http://192.168.177.128:80/v2/compute/capabilities after 20s
+2023-10-03 08:44:59 INFO compute.py:364 Connecting to compute 'vm'
+2023-10-03 08:45:20 WARNING compute.py:367 Cannot connect to compute 'vm': Timeout error for GET call to http://192.168.177.128:80/v2/compute/capabilities after 20s
+2023-10-03 08:45:25 INFO compute.py:364 Connecting to compute 'vm'
+2023-10-03 08:45:46 WARNING compute.py:367 Cannot connect to compute 'vm': Timeout error for GET call to http://192.168.177.128:80/v2/compute/capabilities after 20s
+2023-10-03 08:45:51 INFO compute.py:364 Connecting to compute 'vm'
+2023-10-03 08:46:12 WARNING compute.py:367 Cannot connect to compute 'vm': Timeout error for GET call to http://192.168.177.128:80/v2/compute/capabilities after 20s
+2023-10-03 08:46:17 INFO compute.py:364 Connecting to compute 'vm'
+2023-10-03 08:46:38 WARNING compute.py:367 Cannot connect to compute 'vm': Timeout error for GET call to http://192.168.177.128:80/v2/compute/capabilities after 20s
+2023-10-03 08:46:43 INFO compute.py:364 Connecting to compute 'vm'
+2023-10-03 08:47:04 WARNING compute.py:367 Cannot connect to compute 'vm': Timeout error for GET call to http://192.168.177.128:80/v2/compute/capabilities after 20s
+2023-10-03 08:47:09 INFO compute.py:364 Connecting to compute 'vm'
+2023-10-03 08:47:30 WARNING compute.py:367 Cannot connect to compute 'vm': Timeout error for GET call to http://192.168.177.128:80/v2/compute/capabilities after 20s
+2023-10-03 08:47:35 INFO compute.py:364 Connecting to compute 'vm'
+2023-10-03 08:47:56 WARNING compute.py:367 Cannot connect to compute 'vm': Timeout error for GET call to http://192.168.177.128:80/v2/compute/capabilities after 20s
+2023-10-03 08:48:01 INFO compute.py:364 Connecting to compute 'vm'
+2023-10-03 08:48:22 WARNING compute.py:367 Cannot connect to compute 'vm': Timeout error for GET call to http://192.168.177.128:80/v2/compute/capabilities after 20s
+2023-10-03 08:48:27 INFO compute.py:364 Connecting to compute 'vm'
+2023-10-03 08:48:48 WARNING compute.py:367 Cannot connect to compute 'vm': Timeout error for GET call to http://192.168.177.128:80/v2/compute/capabilities after 20s
+2023-10-03 08:48:53 INFO compute.py:364 Connecting to compute 'vm'
+2023-10-03 08:49:14 WARNING compute.py:367 Cannot connect to compute 'vm': Timeout error for GET call to http://192.168.177.128:80/v2/compute/capabilities after 20s
+2023-10-03 08:49:19 INFO compute.py:364 Connecting to compute 'vm'
+2023-10-03 08:49:40 WARNING compute.py:367 Cannot connect to compute 'vm': Timeout error for GET call to http://192.168.177.128:80/v2/compute/capabilities after 20s
+2023-10-03 08:49:45 INFO compute.py:364 Connecting to compute 'vm'
+2023-10-03 08:50:06 WARNING compute.py:367 Cannot connect to compute 'vm': Timeout error for GET call to http://192.168.177.128:80/v2/compute/capabilities after 20s
+2023-10-03 08:50:11 INFO compute.py:364 Connecting to compute 'vm'
+2023-10-03 08:50:32 WARNING compute.py:367 Cannot connect to compute 'vm': Timeout error for GET call to http://192.168.177.128:80/v2/compute/capabilities after 20s
+2023-10-03 08:50:37 INFO compute.py:364 Connecting to compute 'vm'
+2023-10-03 08:50:58 WARNING compute.py:367 Cannot connect to compute 'vm': Timeout error for GET call to http://192.168.177.128:80/v2/compute/capabilities after 20s
+2023-10-03 08:51:03 INFO compute.py:364 Connecting to compute 'vm'
+2023-10-03 08:51:24 WARNING compute.py:367 Cannot connect to compute 'vm': Timeout error for GET call to http://192.168.177.128:80/v2/compute/capabilities after 20s
+2023-10-03 08:51:29 INFO compute.py:364 Connecting to compute 'vm'
+2023-10-03 08:51:50 WARNING compute.py:367 Cannot connect to compute 'vm': Timeout error for GET call to http://192.168.177.128:80/v2/compute/capabilities after 20s
+2023-10-03 08:51:55 INFO compute.py:364 Connecting to compute 'vm'
+2023-10-03 08:52:16 WARNING compute.py:367 Cannot connect to compute 'vm': Timeout error for GET call to http://192.168.177.128:80/v2/compute/capabilities after 20s
+2023-10-03 08:52:21 INFO compute.py:364 Connecting to compute 'vm'
+2023-10-03 08:52:42 WARNING compute.py:367 Cannot connect to compute 'vm': Timeout error for GET call to http://192.168.177.128:80/v2/compute/capabilities after 20s
+2023-10-03 08:52:47 INFO compute.py:364 Connecting to compute 'vm'
+2023-10-03 08:53:08 WARNING compute.py:367 Cannot connect to compute 'vm': Timeout error for GET call to http://192.168.177.128:80/v2/compute/capabilities after 20s
+2023-10-03 08:53:13 INFO compute.py:364 Connecting to compute 'vm'
+2023-10-03 08:53:34 WARNING compute.py:367 Cannot connect to compute 'vm': Timeout error for GET call to http://192.168.177.128:80/v2/compute/capabilities after 20s
+2023-10-03 08:53:39 INFO compute.py:364 Connecting to compute 'vm'
+2023-10-03 08:54:00 WARNING compute.py:367 Cannot connect to compute 'vm': Timeout error for GET call to http://192.168.177.128:80/v2/compute/capabilities after 20s
+2023-10-03 08:54:05 INFO compute.py:364 Connecting to compute 'vm'
+2023-10-03 08:54:26 WARNING compute.py:367 Cannot connect to compute 'vm': Timeout error for GET call to http://192.168.177.128:80/v2/compute/capabilities after 20s
+2023-10-03 08:54:31 INFO compute.py:364 Connecting to compute 'vm'
+2023-10-03 08:54:52 WARNING compute.py:367 Cannot connect to compute 'vm': Timeout error for GET call to http://192.168.177.128:80/v2/compute/capabilities after 20s
+2023-10-03 08:54:57 INFO compute.py:364 Connecting to compute 'vm'
+2023-10-03 08:55:18 WARNING compute.py:367 Cannot connect to compute 'vm': Timeout error for GET call to http://192.168.177.128:80/v2/compute/capabilities after 20s
+2023-10-03 08:55:23 INFO compute.py:364 Connecting to compute 'vm'
+2023-10-03 08:55:44 WARNING compute.py:367 Cannot connect to compute 'vm': Timeout error for GET call to http://192.168.177.128:80/v2/compute/capabilities after 20s
+2023-10-03 08:55:49 INFO compute.py:364 Connecting to compute 'vm'
+2023-10-03 08:56:10 WARNING compute.py:367 Cannot connect to compute 'vm': Timeout error for GET call to http://192.168.177.128:80/v2/compute/capabilities after 20s
+2023-10-03 08:56:15 INFO compute.py:364 Connecting to compute 'vm'
+2023-10-03 08:56:15 WARNING compute.py:367 Cannot connect to compute 'vm': Cannot connect to host 192.168.177.128:80 ssl:default [Host is down]
+2023-10-03 08:56:20 INFO compute.py:364 Connecting to compute 'vm'
+2023-10-03 08:56:41 WARNING compute.py:367 Cannot connect to compute 'vm': Timeout error for GET call to http://192.168.177.128:80/v2/compute/capabilities after 20s
+2023-10-03 08:56:46 INFO compute.py:364 Connecting to compute 'vm'
+2023-10-03 08:56:51 INFO web_log.py:206 192.168.177.1 [03/Oct/2023:14:56:51 +0000] "GET /v2/computes HTTP/1.1" 200 1831 "-" "GNS3 QT Client v2.2.38"
+2023-10-03 08:57:07 WARNING compute.py:367 Cannot connect to compute 'vm': Timeout error for GET call to http://192.168.177.128:80/v2/compute/capabilities after 20s
+2023-10-03 08:57:12 INFO compute.py:364 Connecting to compute 'vm'
+2023-10-03 08:57:33 WARNING compute.py:367 Cannot connect to compute 'vm': Timeout error for GET call to http://192.168.177.128:80/v2/compute/capabilities after 20s
+2023-10-03 08:57:38 INFO compute.py:364 Connecting to compute 'vm'
+2023-10-03 08:57:50 INFO web_log.py:206 192.168.177.1 [03/Oct/2023:14:57:50 +0000] "GET /v2/templates HTTP/1.1" 200 2501 "-" "GNS3 QT Client v2.2.38"
+2023-10-03 08:57:50 INFO web_log.py:206 192.168.177.1 [03/Oct/2023:14:57:50 +0000] "GET /v2/appliances?symbol_theme=Classic HTTP/1.1" 200 185 "-" "GNS3 QT Client v2.2.38"
+2023-10-03 08:57:50 INFO server_handler.py:53 Start shutting down the server
+2023-10-03 08:57:50 INFO web_log.py:206 192.168.177.1 [03/Oct/2023:14:57:50 +0000] "POST /v2/shutdown HTTP/1.1" 201 194 "-" "GNS3 QT Client v2.2.38"
+2023-10-03 08:57:50 INFO web_server.py:113 Closing 2 websocket connections...
+2023-10-03 08:57:50 INFO compute.py:457 Connection closed to compute 'local' WebSocket 'http://192.168.177.1:3080/v2/compute/notifications/ws'
+2023-10-03 08:57:50 INFO notification_handler.py:82 Client has disconnected from controller WebSocket
+2023-10-03 08:57:50 INFO web_log.py:206 192.168.177.1 [03/Oct/2023:14:21:09 +0000] "GET /v2/notifications/ws HTTP/1.1" 200 0 "-" "-"
+2023-10-03 08:57:50 INFO notification_handler.py:59 Client has disconnected from compute WebSocket
+2023-10-03 08:57:50 INFO web_log.py:206 192.168.177.1 [03/Oct/2023:14:21:09 +0000] "GET /v2/compute/notifications/ws HTTP/1.1" 200 0 "-" "Python/3.9 aiohttp/3.8.4"
+2023-10-03 08:57:50 INFO __init__.py:144 Controller is stopping
+2023-10-03 08:57:50 INFO __init__.py:405 Stop the GNS3 VM
+2023-10-03 08:57:50 INFO __init__.py:430 Executing vmrun with command: '/Applications/VMware Fusion.app/Contents/Library/vmrun' -T fusion stop '/Users/kevin/Documents/virtual-machines/gns3/GNS3 VM.vmwarevm/GNS3 VM.vmx' soft
+2023-10-03 08:57:51 INFO __init__.py:430 Executing vmrun with command: '/Applications/VMware Fusion.app/Contents/Library/vmrun' -T fusion stop '/Users/kevin/Documents/virtual-machines/gns3/GNS3 VM.vmwarevm/GNS3 VM.vmx' soft
+2023-10-03 08:57:52 INFO __init__.py:430 Executing vmrun with command: '/Applications/VMware Fusion.app/Contents/Library/vmrun' -T fusion stop '/Users/kevin/Documents/virtual-machines/gns3/GNS3 VM.vmwarevm/GNS3 VM.vmx' soft
+2023-10-03 08:57:52 WARNING vmware_gns3_vm.py:215 Error when stopping the VM: GNS3VM: Error while executing VMware command: vmrun has returned an error: Error: The virtual machine is not powered on: /Users/kevin/Documents/virtual-machines/gns3/GNS3 VM.vmwarevm/GNS3 VM.vmx
+
+Try to run '/Applications/VMware Fusion.app/Contents/Library/vmrun' -T fusion stop '/Users/kevin/Documents/virtual-machines/gns3/GNS3 VM.vmwarevm/GNS3 VM.vmx' soft in a terminal to see more details.
+And make sure GNS3 and VMware run under the same user.
+2023-10-03 08:57:52 INFO vmware_gns3_vm.py:216 GNS3 VM has been stopped
+2023-10-03 08:57:52 INFO run.py:272 Remove PID file /Users/kevin/.config/GNS3/2.2/gns3_server.pid
